@@ -39,7 +39,7 @@ public class DocController {
 		model.addAttribute("docs", docs);
 		return "doc";	
 	}
-	
+
 	@PostMapping("/uploadFiles")
 	public String uploadMultipleFiles(@RequestPart("file") MultipartFile file) {
 			docStorage.saveFile(file);
