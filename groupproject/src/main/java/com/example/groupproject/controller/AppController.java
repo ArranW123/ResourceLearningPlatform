@@ -3,6 +3,8 @@ package com.example.groupproject.controller;
 import com.example.groupproject.model.Student;
 import com.example.groupproject.repository.StudentRepository;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -32,4 +34,13 @@ public class AppController {
         return "register_success";
 
     }
+    
+    @GetMapping("/list_users")
+    public  String viewUsersList(Model model) {
+    	List<Student> listUsers = repo.findAll();
+    	model.addAttribute("listUsers", listUsers);
+    	return "user";
+    	
+    }
+   
 }
