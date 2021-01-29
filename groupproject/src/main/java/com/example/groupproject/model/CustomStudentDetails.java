@@ -4,7 +4,7 @@ import java.util.Collection;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-
+//adding this to the right class, deleted the old class
 public class CustomStudentDetails implements UserDetails {
 	
 	private Student student;
