@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import {Link, Switch, Route, BrowserRouter as Router } from "react-router-dom";
+// import AddJob from "./Components/addJob/AddJob";
+// import ViewJob from "./Components/viewJob/ViewJob";
 import './App.css';
+import Upload from "./Upload/Upload"
+import Header from "./Header/Header"
+import Homepage from "./Homepage/Homepage"
+import Download from "./Download/Download"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    return (
+      <Router>
+          <Switch>
+              {/* <Route exact path='/' component={Header} /> */}
+              <Route exact path='/' component={Homepage} />
+              {<Route path='/upload' component={Upload} />}
+              {<Route path='/download' component={Download} />}
+          </Switch>
+      </Router>
+    );
+  }
+
 
 export default App;
+
