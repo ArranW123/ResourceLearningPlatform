@@ -98,7 +98,6 @@
     display: flex;
     flex-direction: column;
     padding: 50px;
-    
 }
 
 .b1{
@@ -107,7 +106,8 @@
     color: white;
     padding: 15px 80px;
     font-weight: bold;
-    border: none;
+    border-style: solid;
+    border-color: black;
 }
 
 .b2{
@@ -116,7 +116,8 @@
     color: white;
     padding: 15px 80px;
     font-weight: bold;
-    border: none;
+    border-style: solid;
+    border-color: black;
 }
 
 .b3{
@@ -125,5 +126,6 @@
     color: white;
     padding: 15px 80px;
     font-weight: bold;
-    border: none;
+    border-style: solid;
+    border-color: black;
 }

@@ -41,6 +41,8 @@
     line-height:1;
     text-transform: uppercase;
     width:100%;
+    border-style: solid;
+    border-color: black;
 }
 
 .form{
