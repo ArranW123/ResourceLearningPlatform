@@ -18,7 +18,7 @@ function Header(){
                 <Link to={'/download'} className="downloadbtn">Download Resources</Link>
                 </div>
                 <div>
-                <a class="loginbtn" href="">Login</a>
+                <Link to={'/login'} class="loginbtn" href="">Login </Link>
                 &nbsp;
                 <a class="signupbtn" href="">SignUp</a>
                 &nbsp;

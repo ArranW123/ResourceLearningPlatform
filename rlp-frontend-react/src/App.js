@@ -6,6 +6,7 @@ import Upload from "./Upload/Upload"
 import Header from "./Header/Header"
 import Homepage from "./Homepage/Homepage"
 import Download from "./Download/Download"
+import Login from "./Login/Login";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
               <Route exact path='/' component={Homepage} />
               {<Route path='/upload' component={Upload} />}
               {<Route path='/download' component={Download} />}
+              {<Route path='/login' component={Login} />}
           </Switch>
       </Router>
     );
