@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 20px;
+    background-color: blanchedalmond;
+    text-decoration: none;
+}
+
+.page-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 50px 20px 50px;
+}
+
+.page-container img{
+    height: 600px;
+    width: 700px;
+}
+
+.page-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 16px 70px 16px 70px;
+}
+
+.page-container h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 16px 70px 16px 70px;
+}
+
+.resources{
+    padding: 50px 50px 20px 50px;
+}
+
+.resources h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 16px 70px 500px 70px;
+}
+
+.feedback{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 100px;
+}
+
+.feedback h3{
+    font-size: 2rem;
+    color: #311b92;
+    text-align: center;
+    margin: 16px 70px 16px 70px;
+    
+}
+
+.feedback button{
+    color: white;
+    background-color: #1865F2;
+    border-style: solid;
+    border-color: black;
+    border-radius: 7px;
+    padding: .7rem 30px;
+    font-weight: bold;
+}
