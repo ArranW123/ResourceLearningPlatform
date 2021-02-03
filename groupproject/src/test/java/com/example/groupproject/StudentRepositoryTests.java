@@ -37,5 +37,14 @@ public class StudentRepositoryTests {
         assertThat(existStudent.getStudentEmailAddress()).isEqualTo(student.getStudentEmailAddress());
 
     }
+    
+    @Test
+    public void testFindUserByEmail() {
+    	String StudentEmailAddress = "1821111@brunel.ac.uk";
+    	
+    	Student student = repo.findByEmail(StudentEmailAddress);
+    	
+    	assertThat(student).isNotNull();
+    }
 
 }
