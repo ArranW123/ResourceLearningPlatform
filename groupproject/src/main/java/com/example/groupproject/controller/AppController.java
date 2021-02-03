@@ -6,12 +6,11 @@ import com.example.groupproject.repository.StudentRepository;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-
-//Need help trying to get this application to run the index file, just to test the controller file. 
 
 @Controller
 public class AppController {
@@ -30,17 +29,24 @@ public class AppController {
     }
     @PostMapping("/process_register")
     public String processRegistration(Student student){
+    	
+    	BCryptPasswordEncoder encode = new BCryptPasswordEncoder();
+    	String encodedPass = encode.encode(student.getPassword());
+    	student.setPassword(encodedPass);
+    	
         repo.save(student);
         return "register_success";
 
     }
     
     @GetMapping("/list_users")
-    public  String viewUsersList(Model model) {
-    	List<Student> listUsers = repo.findAll();
-    	model.addAttribute("listUsers", listUsers);
-    	return "user";
+    public String viewUserLists(Model model) {
     	
+    	List<Student> listUsers = repo.findAll();
+    	
+    	model.addAttribute("listUsers", listUsers);
+    	
+    	return "users_lists";
     }
    
 }
