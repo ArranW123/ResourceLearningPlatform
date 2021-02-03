@@ -10,6 +10,7 @@ import Login from "./Login/Login"
 import Signup from "./Signup/Signup"
 import forum from "./Forum/Forum"
 import ComputerScience from "./Forum/ComputerScience"
+import Thread1 from "./Forum/Threads/ComputerScience/Thread1";
 
 function App() {
     return (
@@ -22,7 +23,8 @@ function App() {
               {<Route path='/login' component={Login} />}
               {<Route path='/signup' component={Signup} />}
               {<Route path='/Forum' component={forum} />}
-              {<Route path='/Forum' component={ComputerScience}/>}
+              {<Route path='/ComputerScience' component={ComputerScience}/>}
+              {<Route path='/Thread1' component={Thread1}/>}
           </Switch>
       </Router>
     );
