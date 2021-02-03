@@ -9,6 +9,7 @@ import Download from "./Download/Download"
 import Login from "./Login/Login"
 import Signup from "./Signup/Signup"
 import forum from "./Forum/Forum"
+import ComputerScience from "./Forum/ComputerScience"
 
 function App() {
     return (
@@ -21,6 +22,7 @@ function App() {
               {<Route path='/login' component={Login} />}
               {<Route path='/signup' component={Signup} />}
               {<Route path='/Forum' component={forum} />}
+              {<Route path='/Forum' component={ComputerScience}/>}
           </Switch>
       </Router>
     );
