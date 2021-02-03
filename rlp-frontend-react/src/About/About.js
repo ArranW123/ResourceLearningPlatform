@@ -7,11 +7,8 @@ function About(){
   return(
     <div>
       <Header />
-      <div className="page-container">
+      <div className="info-container">
           <div className="About-Us-info">
-          <div className="img">
-              <img src={about} alt="about photo">
-              </img>
           <h1>
                 About us page for user information about the team
           </h1>
@@ -19,7 +16,9 @@ function About(){
                 Program was created by a team of second year developers<br></br>studying at Brunel University London<br></br>
           </h2>
           </div>
-
+          <div className="img">
+              <img src={about} alt="about photo" width="330" height="560">
+              </img>
           </div>
           </div>
           </div>
