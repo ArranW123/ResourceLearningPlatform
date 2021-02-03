@@ -12,7 +12,7 @@ function Homepage(){
     <div className="banner-container">
         <div className="info">
             <h1>
-            E.LEARNING 
+            E.LEARNING
             </h1>
             <h2>
             Online learning platform for anyone, anywhere. A global resource pool with more resources being uploaded everyday. <br></br>
@@ -35,7 +35,7 @@ function Homepage(){
     <div class="info-container">
         <div className="img-container">
         <img src={remote} alt="Remote img">
-        </img> 
+        </img>
         </div>
 
         <div className="info">
@@ -57,7 +57,7 @@ function Homepage(){
         <Link to={'/download'} className="b3"> Explore</Link>
         </div>
     </div>
-    
+
     </div>
     );
 
