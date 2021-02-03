@@ -8,6 +8,7 @@ import React, {Component} from "react";
 function forum() {
     return (
         <body>
+            <Header/ >
             <ol>
             <h1>E.LEARNING</h1>
             
@@ -19,7 +20,7 @@ function forum() {
                     <p class="comment-count">4 threads</p>
                 </div>
                 
-                 
+                
                 <h2>Mathematics</h2>              
                 <div class ="bottom">
                     <p class="timestamp">Last Updated: 02/02/2021</p>
