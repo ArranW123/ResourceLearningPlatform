@@ -47,5 +47,11 @@ public class CustomStudentDetails implements UserDetails {
 	public boolean isEnabled() {
 		return true;
 	}
+	
+public String getFullName() {
+		
+		return student.getStudentFirstName() + " " + student.getStudentLastName(); //calls users full name when logging in
+		
+	}
 
 }
