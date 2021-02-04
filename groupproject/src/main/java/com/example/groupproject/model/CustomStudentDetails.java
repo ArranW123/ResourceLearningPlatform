@@ -48,7 +48,7 @@ public class CustomStudentDetails implements UserDetails {
 		return true;
 	}
 	
-public String getFullName() {
+    public String getFullName() {
 		
 		return student.getStudentFirstName() + " " + student.getStudentLastName(); //calls users full name when logging in
 		
