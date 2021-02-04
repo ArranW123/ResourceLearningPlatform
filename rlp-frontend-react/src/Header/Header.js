@@ -18,7 +18,11 @@ function Header(){
                 <Link to={'/download'} className="downloadbtn">Download Resources</Link>
                 &nbsp;
                 &nbsp;
+
+                <Link to={'/about'} className="aboutbtn">About</Link>
+
                 <Link to={'/Forum'} class="forumbtn" href="">Forum </Link>
+
                 </div>
                 <div>
                 <Link to={'/login'} class="loginbtn" href="">Login </Link>
