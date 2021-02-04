@@ -6,7 +6,8 @@ import about from './about.png';
 function About(){
   return(
     <div>
-      <Header />
+    <Header/>
+      <body>
       <div className="info-container">
           <div className="About-Us-info">
           <h1>
@@ -21,7 +22,9 @@ function About(){
               </img>
           </div>
           </div>
+          </body>
           </div>
+
   )
 }
 
