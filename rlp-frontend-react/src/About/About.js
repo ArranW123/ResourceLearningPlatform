@@ -22,6 +22,9 @@ function About(){
           <h2>
                 Program was created by a team of second year developers<br></br>studying at Brunel University London<br></br>
           </h2>
+          <h3>
+                Click on an avatar to show more details
+          </h3>
           </div>
           <div className="img">
               <img src={about} alt="about photo" width="330" height="560">
