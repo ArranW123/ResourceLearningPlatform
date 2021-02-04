@@ -39,7 +39,7 @@ public class StudentRepositoryTests {
     }
     
     @Test
-    public void testFindUserByEmail() {
+    public void testFindUserByEmail() {  
     	String StudentEmailAddress = "1821111@brunel.ac.uk";
     	
     	Student student = repo.findByEmail(StudentEmailAddress);
