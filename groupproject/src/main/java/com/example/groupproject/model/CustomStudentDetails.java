@@ -3,17 +3,14 @@ package com.example.groupproject.model;
 import java.util.Collection;
 
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
-
-public class CustomUserDetails implements UserDetails {
+//adding this to the right class, deleted the old class
+public class CustomStudentDetails implements UserDetails {
 	
-	 private User user;
-
-	 
-	 
-	public CustomUserDetails(User user) {
-		this.user = user;
+	private Student student;
+	
+	public CustomStudentDetails(Student student) {
+		this.student = student;
 	}
 
 	@Override
@@ -23,12 +20,12 @@ public class CustomUserDetails implements UserDetails {
 
 	@Override
 	public String getPassword() {
-		 return user.getPassword();
+		return student.getPassword();
 	}
 
 	@Override
 	public String getUsername() {
-		 return user.getEmail();
+		return student.getStudentEmailAddress();
 	}
 
 	@Override
@@ -49,6 +46,12 @@ public class CustomUserDetails implements UserDetails {
 	@Override
 	public boolean isEnabled() {
 		return true;
+	}
+	
+    public String getFullName() {
+		
+		return student.getStudentFirstName() + " " + student.getStudentLastName(); //calls users full name when logging in
+		
 	}
 
 }

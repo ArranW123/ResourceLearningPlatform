@@ -33,16 +33,16 @@
 // 	@Autowired
 // 	DocStorage docStorage;
 	
-// 	@GetMapping("/")
-// 	public String get(Model model) {
-// 		List<Doc> docs = docStorage.getFiles();
-// 		model.addAttribute("docs", docs);
-// 		return "doc";	
-// 	}
-
-// 	@PostMapping("/uploadFiles")
-// 	public String uploadMultipleFiles(@RequestPart("file") MultipartFile file) {
-// 			docStorage.saveFile(file);
+//	@GetMapping("/")
+//	public String get(Model model) {
+//		List<Doc> docs = docStorage.getFiles();
+//		model.addAttribute("docs", docs);
+//		return "doc";
+//	}
+//
+//	@PostMapping("/uploadFiles")
+//	public String uploadMultipleFiles(@RequestPart("file") MultipartFile file) {
+//			docStorage.saveFile(file);
 		
 // 		return "redirect:/";
 // //			return "Uploaded success";

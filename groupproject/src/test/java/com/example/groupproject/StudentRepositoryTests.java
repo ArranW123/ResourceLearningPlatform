@@ -26,7 +26,7 @@ public class StudentRepositoryTests {
     @Test
     public void testCreateStudent(){
         Student student = new Student();
-        student.setEmail("1911533@brunel.ac.uk");
+        student.setStudentEmailAddress("1911533@brunel.ac.uk");
         student.setPassword("password");
         student.setStudentFirstName("Arran");
         student.setStudentLastName("Weeresekere");
@@ -34,8 +34,17 @@ public class StudentRepositoryTests {
         Student savedStudent = repo.save(student);
         Student existStudent = entityManager.find(Student.class, savedStudent.getStudentID());
 
-        assertThat(existStudent.getEmail()).isEqualTo(student.getEmail());
+        assertThat(existStudent.getStudentEmailAddress()).isEqualTo(student.getStudentEmailAddress());
 
+    }
+    
+    @Test
+    public void testFindUserByEmail() {  
+    	String StudentEmailAddress = "1821111@brunel.ac.uk";
+    	
+    	Student student = repo.findByEmail(StudentEmailAddress);
+    	
+    	assertThat(student).isNotNull();
     }
 
 }
