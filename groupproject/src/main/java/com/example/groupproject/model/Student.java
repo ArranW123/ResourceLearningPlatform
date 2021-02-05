@@ -23,6 +23,17 @@ public class Student {
     @Column(nullable = false, unique = true, length = 45)
     private String StudentEmailAddress;
 
+    public String getActiveStatus() {
+        return activeStatus;
+    }
+
+    public void setActiveStatus(String activeStatus) {
+        this.activeStatus = activeStatus;
+    }
+
+    @Column(nullable = false)
+    private String activeStatus;
+
     @Column(nullable = false, length = 64)
     private String password;
 

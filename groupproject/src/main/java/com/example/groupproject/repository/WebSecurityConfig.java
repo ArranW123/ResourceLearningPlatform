@@ -49,7 +49,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		
 		http.authorizeRequests()
-			.antMatchers("/list_users","/deleteUser/**").authenticated()
+			.antMatchers("/list_users","/deleteUser/**","/toggleUser/**").authenticated()
 			.anyRequest().permitAll()
 			.and()
 			.formLogin()
