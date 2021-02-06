@@ -1,12 +1,9 @@
 package com.example.groupproject.RestController;
 
-import com.example.groupproject.dto.LoginStudent;
 import com.example.groupproject.dto.ProfileUpdated;
 import com.example.groupproject.dto.RegisterStudent;
 import com.example.groupproject.model.Student;
 import com.example.groupproject.repository.StudentRepository;
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -49,6 +46,7 @@ public class RestAppController {
         return new ResponseEntity("{\"message\" : \"Registered Successfully\"}", HttpStatus.OK);
     }
 
+
     @GetMapping("/user/deleteUser/{id}")
     public ResponseEntity<?> deleteUser(@PathVariable long id){
 
@@ -69,12 +67,14 @@ public class RestAppController {
 
         String encodedPass = "";
         BCryptPasswordEncoder encode = new BCryptPasswordEncoder(12); // Strength set as 12
-        if(!encode.matches(registerStudent.getPassword(),s.getPassword())) {
-             encodedPass = encode.encode(registerStudent.getPassword());
-             s.setPassword(encodedPass);
+
+        if(!registerStudent.getPassword().equals(s.getPassword()) ) {
+            if (!encode.matches(registerStudent.getPassword(), s.getPassword())) {
+                encodedPass = encode.encode(registerStudent.getPassword());
+                s.setPassword(encodedPass);
+            }
         }
         s.setActiveStatus("Active");
-        s.setPassword(s.getPassword());
         s.setStudentEmailAddress(registerStudent.getEmail());
         s.setStudentLastName(registerStudent.getLastName());
         s.setStudentFirstName(registerStudent.getFirstName());
