@@ -20,7 +20,8 @@ function Header(){
                 &nbsp;
 
                 <Link to={'/about'} className="aboutbtn">About</Link>
-
+                &nbsp;
+                &nbsp;
                 <Link to={'/Forum'} class="forumbtn" href="">Forum </Link>
 
                 </div>

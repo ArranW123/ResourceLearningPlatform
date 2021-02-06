@@ -27,8 +27,10 @@ function Homepage(){
     <div className="form-email">
         <form>
             <input type="text" placeholder="Email"></input>
-            <button>I'm a Student</button>
-            <button>I'm a Teacher</button>
+            &nbsp;
+            <Link to={'/signup'} className="formbutton"> I'm a Student </Link>
+            &nbsp;
+            <Link to={'/signup'} className="formbutton"> I'm a Teacher </Link>
         </form>
     </div>
 
@@ -50,9 +52,9 @@ function Homepage(){
         </div>
 
         <div className="buttons">
-        <button class="b1"> Learners</button>
+        <Link to={'/signup'} class="b1"> Learners</Link>
         &nbsp;
-        <button class="b2"> Teachers</button>
+        <Link to={'/signup'} class="b2"> Teachers</Link>
         &nbsp;
         <Link to={'/download'} className="b3"> Explore</Link>
         </div>
