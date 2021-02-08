@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset = "ISO-8859-1">
+    <title>Register</title>
+    <link rel = "stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+</head>
+<body>
+<div class = "container">
+   <center><h1>Register - Student</h1></center>
+</div>
+<form th:action="/user" method="#" >
+    <div class="row">
+
+        <div class="col-sm-6">
+            <div class="form-group">
+                <input  class="form-control" name="username" id="username" type="text" th:field="username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" placeholder = 'Enter your username'>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="form-group">
+                <input path="subject" class="form-control" name="subject" id="subject" type="password"  onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter password'" placeholder = 'Enter Subject'>
+            </div>
+        </div>
+    </div>
+    <div class="form-group mt-3">
+        <button type="submit" class="button button-contactForm btn_4 boxed-btn">Send Message</button>
+    </div>
+</form>
+
+<div>
+</div>
+</body>
+</html>
