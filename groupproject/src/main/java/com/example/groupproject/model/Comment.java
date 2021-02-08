@@ -31,12 +31,12 @@ private String author_comment;
 @Column(nullable = false, length = 20)
 private String date;
 
-public Comment(String author, String author_comment, String date){
-    super();
-    this.author = author;
-    this.author_comment = author_comment;
-    this.date = date;
-}
+// public Comment(String author, String author_comment, String date){
+//     super();
+//     this.author = author;
+//     this.author_comment = author_comment;
+//     this.date = date;
+// }
 
 public long getCommentID() {
     return commentID;
