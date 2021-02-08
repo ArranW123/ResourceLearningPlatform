@@ -24,7 +24,12 @@ function Header(){
                 <Link to={'/download'} className="downloadbtn">Download Resources</Link>
                 &nbsp;
                 &nbsp;
-                <Link to={'/Forum'} className="forumbtn" href="">Forum </Link>
+
+                <Link to={'/about'} className="aboutbtn">About</Link>
+                &nbsp;
+                &nbsp;
+                <Link to={'/Forum'} class="forumbtn" href="">Forum </Link>
+
                 </div>
                 {!sessionStorage.getItem("user") ? 
                 <div>

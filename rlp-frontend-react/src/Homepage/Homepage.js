@@ -12,7 +12,7 @@ function Homepage(){
     <div className="banner-container">
         <div className="info">
             <h1>
-            E.LEARNING 
+            E.LEARNING
             </h1>
             <h2>
             Online learning platform for anyone, anywhere. A global resource pool with more resources being uploaded everyday. <br></br>
@@ -27,15 +27,17 @@ function Homepage(){
     <div className="form-email">
         <form>
             <input type="text" placeholder="Email"></input>
-            <button>I'm a Student</button>
-            <button>I'm a Teacher</button>
+            &nbsp;
+            <Link to={'/signup'} className="formbutton"> I'm a Student </Link>
+            &nbsp;
+            <Link to={'/signup'} className="formbutton"> I'm a Teacher </Link>
         </form>
     </div>
 
     <div class="info-container">
         <div className="img-container">
         <img src={remote} alt="Remote img">
-        </img> 
+        </img>
         </div>
 
         <div className="info">
@@ -50,14 +52,14 @@ function Homepage(){
         </div>
 
         <div className="buttons">
-        <button class="b1"> Learners</button>
+        <Link to={'/signup'} class="b1"> Learners</Link>
         &nbsp;
-        <button class="b2"> Teachers</button>
+        <Link to={'/signup'} class="b2"> Teachers</Link>
         &nbsp;
         <Link to={'/download'} className="b3"> Explore</Link>
         </div>
     </div>
-    
+
     </div>
     );
 
