@@ -15,4 +15,14 @@ import lombok.Setter;
 @AllArgsConstructor
 public class UserResponseDTO {
     private Student student;
+
+	public void setStudent(Student user) {
+		this.student= user;
+		// TODO Auto-generated method stub
+		
+	}
+
+	public Student getStudent() {
+		return student;
+	}
 }

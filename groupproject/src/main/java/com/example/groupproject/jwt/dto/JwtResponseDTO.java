@@ -11,6 +11,16 @@ import java.io.Serializable;
 public class JwtResponseDTO implements Serializable {
 
     private static final long serialVersionUID = -8091879091924046844L;
-    private final String jwttoken;
-    private final UserResponseDTO user;
+    private String jwttoken = "";
+    public JwtResponseDTO(String token, UserResponseDTO userResponseDTO) {
+		this.jwttoken= token;
+		this.user = userResponseDTO;
+	}
+	public String getJwttoken() {
+		return jwttoken;
+	}
+	public UserResponseDTO getUser() {
+		return user;
+	}
+	private UserResponseDTO user = new UserResponseDTO();
 }

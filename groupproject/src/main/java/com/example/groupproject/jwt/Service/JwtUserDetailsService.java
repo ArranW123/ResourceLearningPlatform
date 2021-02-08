@@ -25,9 +25,16 @@ public class JwtUserDetailsService implements UserDetailsService {
             throws UsernameNotFoundException {
         Student user = userRepository.findByEmail(username);
 
+        try
+        {
         if (user == null) {
             throw new BadCredentialException("Could not find user");
         }
+        }
+        catch(Exception ex) {
+        	
+        }
+        
 
         return new MyUserDetails(user);
     }
