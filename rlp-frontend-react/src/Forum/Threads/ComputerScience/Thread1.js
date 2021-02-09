@@ -16,15 +16,15 @@ function Thread1(){
     // this.handleChange = this.handleChange.bind(this);
     // this.handleSubmit = this.handleSubmit.bind(this);
 
-   const handleChange = (event) =>{
-        this.setState({value: event.target.value});
-    }
-    // const handleChange = (e) => {
-    //     updateFormData({
-    //       ...formData,
-    //       [e.target.name]: e.target.value(), //Causes error ("TypeError: e.target.value is not a function"), find how to store form data in React
-    //     });
-    //   };
+//    const handleChange = (event) =>{
+//         this.setState({value: event.target.value});
+//     }
+    const handleChange = (e) => {
+        updateFormData({
+          ...formData,
+          [e.target.name]: e.target.value(), //Causes error ("TypeError: e.target.value is not a function"), find how to store form data in React
+        });
+      };
     const handleSubmit = (event) => {event.preventDefault()
 
 
