@@ -6,9 +6,9 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 //adding this to the right class, deleted the old class
 public class CustomStudentDetails implements UserDetails {
-
+	
 	private Student student;
-
+	
 	public CustomStudentDetails(Student student) {
 		this.student = student;
 	}
@@ -47,11 +47,11 @@ public class CustomStudentDetails implements UserDetails {
 	public boolean isEnabled() {
 		return true;
 	}
-
-	public String getFullName() {
-
+	
+    public String getFullName() {
+		
 		return student.getStudentFirstName() + " " + student.getStudentLastName(); //calls users full name when logging in
-
+		
 	}
 
 }
