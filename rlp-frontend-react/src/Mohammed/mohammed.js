@@ -22,3 +22,5 @@ function Mohammed(){
     </div>
   )
 }
+
+export default Mohammed;
