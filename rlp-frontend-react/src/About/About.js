@@ -35,7 +35,7 @@ function About(){
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <style dangerouslySetInnerHTML={{__html: "\n.container {\n  position: relative;\n  width: 50%;\n}\n\n.image {\n  opacity: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: .5s ease;\n  backface-visibility: hidden;\n}\n\n.middle {\n  transition: .5s ease;\n  opacity: 0;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  -ms-transform: translate(-50%, -50%);\n  text-align: center;\n}\n\n.container:hover .image {\n  opacity: 0.3;\n}\n\n.container:hover .middle {\n  opacity: 1;\n}\n\n.text {\n  background-color: #1865F2;\n  color: white;\n  font-size: 16px;\n  padding: 16px 32px;\n}\n" }} />
             <div className="container">
-              <img src={avatar1} alt="Avatar1" className="image" style={{width: '70%'}} />
+              <img src={avatar1} alt="Avatar1" className="image" style={{width: '65%'}}/>
               <div className="middle">
                 <div className="text">Mohammed</div>
               </div>
@@ -45,7 +45,7 @@ function About(){
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <style dangerouslySetInnerHTML={{__html: "\n.container {\n  position: relative;\n  width: 50%;\n}\n\n.image {\n  opacity: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: .5s ease;\n  backface-visibility: hidden;\n}\n\n.middle {\n  transition: .5s ease;\n  opacity: 0;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  -ms-transform: translate(-50%, -50%);\n  text-align: center;\n}\n\n.container:hover .image {\n  opacity: 0.3;\n}\n\n.container:hover .middle {\n  opacity: 1;\n}\n\n.text {\n  background-color: #1865F2;\n  color: white;\n  font-size: 16px;\n  padding: 8px 16px;\n}\n" }} />
           <div className="container">
-            <img src={avatar2} alt="Avatar2" className="image" style={{width: '70%'}} />
+            <img src={avatar2} alt="Avatar2" className="image" style={{width: '65%'}} />
             <div className="middle">
               <div className="text">Ahmed</div>
             </div>
@@ -55,7 +55,7 @@ function About(){
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style dangerouslySetInnerHTML={{__html: "\n.container {\n  position: relative;\n  width: 50%;\n}\n\n.image {\n  opacity: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: .5s ease;\n  backface-visibility: hidden;\n}\n\n.middle {\n  transition: .5s ease;\n  opacity: 0;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  -ms-transform: translate(-50%, -50%);\n  text-align: center;\n}\n\n.container:hover .image {\n  opacity: 0.3;\n}\n\n.container:hover .middle {\n  opacity: 1;\n}\n\n.text {\n  background-color: #1865F2;\n  color: white;\n  font-size: 16px;\n  padding: 16px 32px;\n}\n" }} />
         <div className="container">
-          <img src={avatar3} alt="Avatar3" className="image" style={{width: '70%'}} />
+          <img src={avatar3} alt="Avatar3" className="image" style={{width: '65%'}} />
           <div className="middle">
             <div className="text">Arran</div>
           </div>
@@ -65,7 +65,7 @@ function About(){
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style dangerouslySetInnerHTML={{__html: "\n.container {\n  position: relative;\n  width: 50%;\n}\n\n.image {\n  opacity: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: .5s ease;\n  backface-visibility: hidden;\n}\n\n.middle {\n  transition: .5s ease;\n  opacity: 0;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  -ms-transform: translate(-50%, -50%);\n  text-align: center;\n}\n\n.container:hover .image {\n  opacity: 0.3;\n}\n\n.container:hover .middle {\n  opacity: 1;\n}\n\n.text {\n  background-color: #1865F2;\n  color: white;\n  font-size: 16px;\n  padding: 16px 32px;\n}\n" }} />
         <div className="container">
-          <img src={avatar4} alt="Avatar4" className="image" style={{width: '70%'}} />
+          <img src={avatar4} alt="Avatar4" className="image" style={{width: '65%'}} />
           <div className="middle">
             <div className="text">Sagar</div>
           </div>
@@ -75,7 +75,7 @@ function About(){
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style dangerouslySetInnerHTML={{__html: "\n.container {\n  position: relative;\n  width: 50%;\n}\n\n.image {\n  opacity: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: .5s ease;\n  backface-visibility: hidden;\n}\n\n.middle {\n  transition: .5s ease;\n  opacity: 0;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  -ms-transform: translate(-50%, -50%);\n  text-align: center;\n}\n\n.container:hover .image {\n  opacity: 0.3;\n}\n\n.container:hover .middle {\n  opacity: 1;\n}\n\n.text {\n  background-color: #1865F2;\n  color: white;\n  font-size: 16px;\n  padding: 16px 32px;\n}\n" }} />
         <div className="container">
-          <img src={avatar5} alt="Avatar5" className="image" style={{width: '70%'}} />
+          <img src={avatar5} alt="Avatar5" className="image" style={{width: '65%'}} />
           <div className="middle">
             <div className="text">Keyur</div>
           </div>
@@ -85,7 +85,7 @@ function About(){
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style dangerouslySetInnerHTML={{__html: "\n.container {\n  position: relative;\n  width: 50%;\n}\n\n.image {\n  opacity: 1;\n  display: block;\n  width: 100%;\n  height: auto;\n  transition: .5s ease;\n  backface-visibility: hidden;\n}\n\n.middle {\n  transition: .5s ease;\n  opacity: 0;\n  position: absolute;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  -ms-transform: translate(-50%, -50%);\n  text-align: center;\n}\n\n.container:hover .image {\n  opacity: 0.3;\n}\n\n.container:hover .middle {\n  opacity: 1;\n}\n\n.text {\n  background-color: #1865F2;\n  color: white;\n  font-size: 16px;\n  padding: 16px 32px;\n}\n" }} />
         <div className="container">
-          <img src={avatar6} alt="Avatar6" className="image" style={{width: '70%'}} />
+          <img src={avatar6} alt="Avatar6" className="image" style={{width: '65%'}} />
           <div className="middle">
             <div className="text">Sekhar</div>
           </div>
@@ -94,6 +94,26 @@ function About(){
           </body>
           </div>
 
+  )
+}
+
+function mohammed(){
+  return(
+    <div>
+    <Header/>
+      <body>
+      <div className="info-container">
+          <div className="About-Us-info">
+          <h1>
+                Mohammed Fawaz
+          </h1>
+          <h2>
+                Second year student studying Computer Science<br></br>at Brunel University London<br></br>
+          </h2>
+          </div>
+      </div>
+      </body>
+    </div>
   )
 }
 export default About;
