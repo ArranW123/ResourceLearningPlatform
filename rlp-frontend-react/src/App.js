@@ -18,6 +18,7 @@ import Arran from "./Arran/arran"
 import Sagar from "./Sagar/sagar"
 import Keyur from "./Keyur/keyur"
 import Sekhar from "./Sekhar/sekhar"
+import Quiz1 from "./Quiz/Quiz1"
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
               {/* <Route exact path='/' component={Header} /> */}
               <Route exact path='/' component={Homepage} />
               {<Route path='/upload' component={Upload} />}
+              {<Route path='/Quiz1' component={Quiz1} />}
               {<Route path='/download' component={Download} />}
               {<Route path='/about' component={About} />}
               {<Route path='/login' component={Login} />}
