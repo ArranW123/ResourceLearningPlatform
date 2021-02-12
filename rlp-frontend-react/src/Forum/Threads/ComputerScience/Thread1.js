@@ -79,15 +79,13 @@ function addComment(comment){
             <div class="top-comment">
                 <p class="user">${comment.author}</p>
             </div>
-            <p class="comment-ts">${new Date (comment.date).toLocaleString()}</p>
+            <p class="comment-ts">${new Date(comment.date).toLocaleString()}</p>
             <div class="comment-content">
                 ${comment.content}
             </div>
         </div>
-        `
-  
-    
+        `;
 }
-var comments = document.querySelector('.comments');
+var comments = document.querySelector(".comments");
 
 export default Thread1;
