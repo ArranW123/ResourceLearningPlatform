@@ -15,39 +15,38 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-
 @Entity
 @Table(name = "docs")
 @EntityListeners(AuditingEntityListener.class)
-@JsonIgnoreProperties(value = {"createdAt"},
-		allowGetters = true)
+@JsonIgnoreProperties(value = {"createdAt"}, 
+allowGetters = true)
 
 public class Doc implements Serializable {
-
+	
 	/**
-	 *
+	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+	
 	@NotBlank
 	private String docName;
-
+	
 	@NotBlank
 	private String docType;
-
-	@NotBlank
-	private String descriptiion;
-
-	@Lob
-	private byte[] data;
-
-	public Doc() {
-
-	}
+	
+    @NotBlank
+    private String descriptiion;
+    
+    @Lob
+    private byte[] data;
+    
+    public Doc() {
+    	
+    }
 
 	public Doc(@NotBlank String docName, @NotBlank String docType, @NotBlank String descriptiion, byte[] data) {
 		super();
@@ -96,5 +95,5 @@ public class Doc implements Serializable {
 	public void setData(byte[] data) {
 		this.data = data;
 	}
-
+	
 }

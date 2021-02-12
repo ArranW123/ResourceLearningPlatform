@@ -50,13 +50,12 @@
     padding-left: 15px;
 }
 
-.formbutton{
+.form-email button{
     color: white;
     background-color: #1865F2;
     border-style: solid;
     border-color: black;
     border-radius: 7px;
-    border-width: 0.1rem;
     padding: .7rem 30px;
     font-weight: bold;
 }
@@ -109,7 +108,6 @@
     font-weight: bold;
     border-style: solid;
     border-color: black;
-    border-width: 0.1rem;
 }
 
 .b2{
@@ -120,7 +118,6 @@
     font-weight: bold;
     border-style: solid;
     border-color: black;
-    border-width: 0.1rem;
 }
 
 .b3{
@@ -131,5 +128,4 @@
     font-weight: bold;
     border-style: solid;
     border-color: black;
-    border-width: 0.1rem;
 }
