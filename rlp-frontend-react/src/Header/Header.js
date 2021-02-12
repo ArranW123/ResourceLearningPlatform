@@ -2,6 +2,12 @@ import {Link, Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import './Header.css';
 import logo from './Logo.png'
 function Header(){
+
+    const signOut=()=>{
+        sessionStorage.clear();
+        window.location.href="/login"
+
+    }
     return(
             <div className="navbar">
                 <div className="logo">
@@ -25,12 +31,20 @@ function Header(){
                 <Link to={'/Forum'} class="forumbtn" href="">Forum </Link>
 
                 </div>
+                {!sessionStorage.getItem("user") ? 
                 <div>
-                <Link to={'/login'} class="loginbtn" href="">Login </Link>
-                &nbsp;
-                <Link to={'signup'} class="signupbtn" href="">SignUp </Link>
-                &nbsp;
-                </div>
+               
+                <Link to={'/login'} className="loginbtn" href="">Login </Link>
+                 &nbsp;
+                <Link to={'signup'} className="signupbtn" href="">SignUp </Link>
+                &nbsp; 
+                </div>: <div><Link to={'/profile'} className="profilebtn" href="">Profile </Link>
+                 &nbsp; 
+                 <button onClick={signOut} className="signoutbtn" href="">SignOut </button>
+                 &nbsp; 
+                 
+                 
+                 </div> }
             </div>
 
     );
