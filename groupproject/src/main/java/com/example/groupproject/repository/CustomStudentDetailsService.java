@@ -16,8 +16,9 @@ public class CustomStudentDetailsService implements UserDetailsService {
 	@Override
 	public UserDetails loadUserByUsername(String StudentEmailAddress) throws UsernameNotFoundException {
 		Student student = repo.findByEmail(StudentEmailAddress);
-		if(student == null) {
-			throw new UsernameNotFoundException("Student not found");
+
+		if(student == null || student.getActiveStatus().equals("Inactive")) {
+			throw new UsernameNotFoundException("Student not found or account inactive");
 		}
 		return new CustomStudentDetails(student);
 	}
