@@ -16,7 +16,7 @@ public class CommentStorage {
     public Comment saveComment(){
         try{
             //Comment comment = new Comment(author, author_comment, date)
-
+            //commentRepository
         }catch(Exception e){
             e.printStackTrace();
         }
