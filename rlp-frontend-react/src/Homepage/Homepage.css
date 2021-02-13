@@ -129,3 +129,10 @@
     border-style: solid;
     border-color: black;
 }
+
+.studentbtn{
+    border-radius: 7px;
+    padding: 13px 17px;
+    color: white;
+    background-color: #1865F2;
+}
