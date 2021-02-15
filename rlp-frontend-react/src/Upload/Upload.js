@@ -5,8 +5,8 @@ import Header from '../Header/Header';
 import uploadimg from './Upload_photo.png'
 
 export default function App() {
-  const [output, setOutput] = React.useState("");
   const [file, setFile] = React.useState("");
+  const [output, message] = React.useState("");
 
 const handleChange = event => setFile(event.target.files[0]);
 
@@ -17,11 +17,12 @@ const handleChange = event => setFile(event.target.files[0]);
     axios({
       method: 'post',
       url: '/uploadFiles',
+      
       data: data
 
     }).then(res => {
       console.log(res);
-      setOutput(res.status === 200 ? "successfully added" : "Upload failed");
+      message(res.data.message);
     });
   }
 
@@ -40,11 +41,14 @@ const handleChange = event => setFile(event.target.files[0]);
           Upload and Share Files
         </h1>
         <div className="form">
-          <input type= "file" onChange={handleChange} />
+          <input type= "file" multiple onChange={handleChange} />
           &nbsp;
           <button className="btn" onClick={handleSubmit}>
               Upload File
           </button>
+        </div>
+        <div className="box">
+          <p>{output}</p>
         </div>
       </header>
     </div>
