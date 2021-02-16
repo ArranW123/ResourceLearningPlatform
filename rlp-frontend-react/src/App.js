@@ -1,6 +1,4 @@
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
-// import AddJob from "./Components/addJob/AddJob";
-// import ViewJob from "./Components/viewJob/ViewJob";
 import './App.css';
 import Upload from "./Upload/Upload"
 import Homepage from "./Homepage/Homepage"

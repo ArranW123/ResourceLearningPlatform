@@ -30,11 +30,12 @@
     margin: 16px 70px 16px 70px;
 }
 
-.btn{
+.form button{
     background-color:#1865F2;
     padding:12px 26px;
     color: white;
-    font-size:16px;
+    font-size:22px;
+    font-weight: bold;
     border-radius: 7px;
     cursor:pointer;
     display:inline-block;
@@ -52,4 +53,8 @@
     justify-content: space-between;
     padding: 20px 50px 0px 50px;
 
+}
+
+.box{
+    padding: 15px;
 }
