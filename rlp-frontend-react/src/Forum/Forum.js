@@ -11,7 +11,6 @@ function forum() {
 
       <body>
         <div>
-          <h1>E.LEARNING</h1>
           <div className="row">
             <div className="col-lg-12">
               <br />

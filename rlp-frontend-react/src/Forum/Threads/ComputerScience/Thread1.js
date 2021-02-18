@@ -55,9 +55,10 @@ event.preventDefault()
 const toInput  = {input};
 axios({
     method: 'post',
-    url: '/Thread1',
+    url: '/Thread',
     data:{
-        text: toInput.input,
+        author: authorValue, //toInput.input,
+        author_comment: commentValue,
     }
 }) .then(res => {
     console.log(res);
@@ -89,7 +90,6 @@ axios({
     return(
         <body>
             <Header />
-            <h1>Hello!</h1>
             <div>
                 <p>I am having trouble with Java programming, can someone help me?</p>
                 <form>

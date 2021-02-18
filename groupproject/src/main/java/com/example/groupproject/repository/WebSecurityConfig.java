@@ -77,7 +77,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	public void configure(WebSecurity web) throws Exception {
-		web.ignoring().antMatchers("/options","/authenticate","/registerProcess");
+		web.ignoring().antMatchers("/options","/authenticate","/registerProcess","/Thread");
 	}
 
 	@Override
@@ -85,7 +85,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.cors();
 		http.csrf().disable()
 				// dont authenticate this particular request
-				.authorizeRequests().antMatchers("/authenticate","/registerProcess").permitAll()
+				.authorizeRequests().antMatchers("/authenticate","/registerProcess","/Thread").permitAll()
 			.antMatchers("/list_users","/user/**").authenticated()
 			.anyRequest().permitAll()
 			.and()
