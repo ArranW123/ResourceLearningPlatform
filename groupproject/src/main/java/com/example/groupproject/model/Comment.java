@@ -31,6 +31,7 @@ private String author_comment;
 @Column(nullable = false, length = 20)
 private String date;
 
+
 // public Comment(String author, String author_comment, String date){
 //     super();
 //     this.author = author;
