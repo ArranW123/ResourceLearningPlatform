@@ -35,9 +35,25 @@
     padding: 70px 100px;
 }
 
-.info-container h1,h2,h3{
+.info-container h1{
     font-size: 2rem;
     font-weight: bold;
+    text-align: center;
+    margin-top: -100%;
+    margin: 16px 100px 16px 100px;
+}
+
+.info-container h2{
+    font-size: 1.625rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: -100%;
+    margin: 16px 100px 16px 100px;
+}
+
+.info-container h3{
+    font-size: 1.625rem;
+    font-weight: 600;
     text-align: center;
     margin-top: -100%;
     margin: 16px 100px 16px 100px;
@@ -50,12 +66,47 @@
 }
 
 .avatar-image img{
-  height: 400px;
+  height: 512px;
   width: 512px;
   padding-top: 7px;
 }
 
-.mohammedbtn,.ahmedbtn,.arranbtn,.sagarbtn,.keyurbtn,sekharbtn{
+.mohammedbtn{
+  border-radius: 7px;
+  padding: 7px 17px;
+  color: white;
+  background-color: #1865F2;
+}
+
+.ahmedbtn{
+  border-radius: 7px;
+  padding: 7px 17px;
+  color: white;
+  background-color: #1865F2;
+}
+
+.arranbtn{
+  border-radius: 7px;
+  padding: 7px 17px;
+  color: white;
+  background-color: #1865F2;
+}
+
+.sagarbtn{
+  border-radius: 7px;
+  padding: 7px 17px;
+  color: white;
+  background-color: #1865F2;
+}
+
+.keyurbtn{
+  border-radius: 7px;
+  padding: 7px 17px;
+  color: white;
+  background-color: #1865F2;
+}
+
+.sekharbtn{
   border-radius: 7px;
   padding: 7px 17px;
   color: white;
