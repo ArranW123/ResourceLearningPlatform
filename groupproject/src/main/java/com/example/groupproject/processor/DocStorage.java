@@ -2,6 +2,7 @@ package com.example.groupproject.processor;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Stream;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -27,10 +28,10 @@ public class DocStorage {
 		return null;
 	}
 
-	public Optional <Doc> getFile(Long fileId){
-		return docRepository.findById(fileId);
+	public Doc getFile(String fileId){
+		return docRepository.findById(fileId).get();
 	}
-	public List <Doc> getFiles(){
-		return docRepository.findAll();
+	public Stream <Doc> getFiles(){
+		return docRepository.findAll().stream();
 	}
 }

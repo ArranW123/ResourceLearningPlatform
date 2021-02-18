@@ -28,9 +28,9 @@ function Homepage(){
         <form>
             <input type="text" placeholder="Email"></input>
             &nbsp;
-            <Link to={'/signup'} className="formbutton"> I'm a Student </Link>
+            <Link to={'/signup'} className="studentbtn"> I'm a Student </Link>
             &nbsp;
-            <Link to={'/signup'} className="formbutton"> I'm a Teacher </Link>
+            <Link to={'/signup'} className="studentbtn"> I'm a Teacher </Link>
         </form>
     </div>
 
