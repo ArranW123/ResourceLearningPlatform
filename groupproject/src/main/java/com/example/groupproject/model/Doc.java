@@ -30,7 +30,7 @@ public class Doc implements Serializable {
 
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private String id;
 	
 	@NotBlank
 	private String docName;
@@ -56,12 +56,8 @@ public class Doc implements Serializable {
 		this.data = data;
 	}
 
-	public Long getId() {
+	public String getId() {
 		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
 	}
 
 	public String getDocName() {
