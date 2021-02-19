@@ -38,6 +38,7 @@ public class CommentController {
     @RequestMapping(value = "/Thread",method = RequestMethod.POST)
     ResponseEntity<?> Registercomment(@Valid @RequestBody Comment comment) {
         Comment c = new Comment();
+        //Setting the values from front-end into "c"
         c.setAuthor(comment.getAuthor());
         c.setAuthor_comment(comment.getAuthor_comment());
 
@@ -47,18 +48,26 @@ public class CommentController {
         String formattedDate = myDateObj.format(myFormatObj);  
         c.setDate(formattedDate);
       
-
         //Testing
         String author = c.getAuthor();
         System.out.println(author);
+        
         //Testing            
         String commentvar = c.getAuthor_comment();
         System.out.println(commentvar);
         System.out.println(formattedDate);
         
+        //Saving to repo
         repo.save(c);
         return ResponseEntity.ok(HttpStatus.OK);
         }
+
+        @RequestMapping(value = "/getComment",method = RequestMethod.GET)
+        List<Comment> getComment(@Valid Comment comment) {
+            return repo.findAll();
+        }
+
+
 }
 
 

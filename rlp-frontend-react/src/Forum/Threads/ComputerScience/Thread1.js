@@ -2,7 +2,7 @@ import {Link, Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import Header from '../../../Header/Header';
 import './Thread1.css';
 import axios from 'axios';
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 //import React, {useState} from "react";
 
 const initialFormData = {        
@@ -17,7 +17,7 @@ function Thread1(){
     const [output, setOutput] = React.useState("");
     const [commentValue, setcommentValue] = useState('');
     const [authorValue, setauthorValue] = useState('');
-    
+    const [responseData, setresponseData] = useState('');
     const onSubmit = (e) =>{
         e.preventDefault();
         // let comment = {author: this.state.author, author_comment: this.state.author_comment}
@@ -55,15 +55,22 @@ axios({
 });
 
 };
+const[data, info] = React.useState([]);
+useEffect(()=>{
+        axios({
+            method: 'get',
+            url: '/getComment',
+            headers:{
+                
+            }
+        }).then(response=>{
+            console.log(response);
+            info(response.data);
+        });
+    },[]);
+  
 
-const getAllComments = (event) =>{
-    axios({
-        method: 'get',
-        url: ''
-    })
-}
-
-return(
+    return(
         <body>
             <Header />
             <div>
@@ -78,8 +85,12 @@ return(
 ></input>
                     <br></br>
                     <input type="submit" onClick = {handleSubmit} value="Submit"></input>
+                                      
                 </form>
                 <div class="comments">
+                    <div>
+
+                    </div>
                 </div>
             </div>
         </body>

@@ -11,7 +11,7 @@ body {
 }
   @keyframes nextQuestion{
   0%   {left: 0%; top:30%;}
-  100% {left:38%; top:30%;}
+  100% {left:30.5%; top:30%;}
   }
   @keyframes finishedQuestion{
     0%   {left:38%; top:30%;}
@@ -22,8 +22,7 @@ body {
     position: absolute;
     top: 30%;
     background-color: #252d4a;
-    left: 38%;
-    right: 62%;
+    left: 30.5%;
     width: 100%;
     animation-name: nextQuestion;
     animation-duration: 0.8s;
@@ -31,8 +30,8 @@ body {
   .app {
     position: absolute;
     background-color: #252d4a;
-    width: 450px;
-    min-height: 200px;
+    width: 800px;
+    min-height: 500px;
     height: min-content;
     border-radius: 15px;
     padding: 20px;
@@ -97,18 +96,19 @@ body {
   }
   
   .quizbutton {
+    
     width: 100%;
+    height: 20%;
     font-size: 16px;
     color: #ffffff;
     background-color: #252d4a;
     border-radius: 15px;
-    display: flex;
     padding: 5px;
     justify-content: flex-start;
     align-items: center;
     border: 5px solid #234668;
     cursor: pointer;
-    
+
   }
   
   .correct {

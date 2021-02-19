@@ -28,8 +28,10 @@ function Header(){
                 <Link to={'/about'} className="aboutbtn">About</Link>
                 &nbsp;
                 &nbsp;
-                <Link to={'/Forum'} class="forumbtn" href="">Forum </Link>
-
+                <Link to={'/Forum'} class="forumbtn">Forum </Link>
+                &nbsp;
+                &nbsp;
+                <Link to = {'/QuizMenu'} class="quizbtn">Quiz</Link>
                 </div>
                 {!sessionStorage.getItem("user") ? 
                 <div>
