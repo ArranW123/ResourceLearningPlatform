@@ -1,44 +1,43 @@
-
 import React, { useState } from 'react';
 import "./Quiz1.css"
 import Header from '../Header/Header';
 
-export default function Quiz1() {
+export default function Quiz2() {
 	const questions = [
 		{
-			questionText: 'What does "GUI" stand for?',
+			questionText: 'Convert this decimal to percentage: "0.01',
 			answerOptions: [
-				{ answerText: 'Graphical Utility Interface', isCorrect: false },
-				{ answerText: 'Graphics Underneath Interface', isCorrect: false },
-				{ answerText: 'Graphical User Interface', isCorrect: true },
-				{ answerText: 'Graphic Uplink Interface', isCorrect: false },
+				{ answerText: '0.01%', isCorrect: false },
+				{ answerText: '100%', isCorrect: false },
+				{ answerText: '1%', isCorrect: true },
+				{ answerText: '10%', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'What type of storage does not accept new information?',
+			questionText: 'Solve: 6 ÷ 2(1+2)',
 			answerOptions: [
-				{ answerText: 'Hard Drive', isCorrect: false },
-				{ answerText: 'ROM', isCorrect: true },
-				{ answerText: 'RAM', isCorrect: false },
-				{ answerText: 'Removable Media', isCorrect: false },
+				{ answerText: '3', isCorrect: false },
+				{ answerText: '1', isCorrect: true },
+				{ answerText: '2', isCorrect: false },
+				{ answerText: '6', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Microprocessors are used in?',
+			questionText: 'Calculate the root: x^3 - 7x + 6 = 0',
 			answerOptions: [
-				{ answerText: 'Computers', isCorrect: true },
-				{ answerText: 'DVD players', isCorrect: false },
-				{ answerText: 'Calculators', isCorrect: false },
-				{ answerText: 'Remote Controls', isCorrect: false },
+				{ answerText: '1, 2, -3', isCorrect: true },
+				{ answerText: '23,5', isCorrect: false },
+				{ answerText: '1, 2, 3', isCorrect: false },
+				{ answerText: '-1,-2,-3', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'What componenet of the computer is correctly associated with the function it performs?',
+			questionText: 'Solve: 9 + 10 = ?',
 			answerOptions: [
-				{ answerText: 'Microprocessor: Storage', isCorrect: false },
-				{ answerText: 'Random Access Memory: Processing', isCorrect: false },
-				{ answerText: 'Optical Drive: Input', isCorrect: false },
-				{ answerText: 'Monitor: Output', isCorrect: true },
+				{ answerText: '1', isCorrect: false },
+				{ answerText: '90', isCorrect: false },
+				{ answerText: '21', isCorrect: false },
+				{ answerText: '19', isCorrect: true },
 			],
 		},
 	];

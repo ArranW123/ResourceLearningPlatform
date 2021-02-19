@@ -2,7 +2,7 @@ import {Link, Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import Header from '../../../Header/Header';
 import './Thread1.css';
 import axios from 'axios';
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 //import React, {useState} from "react";
 
 const initialFormData = {        
@@ -17,18 +17,7 @@ function Thread1(){
     const [output, setOutput] = React.useState("");
     const [commentValue, setcommentValue] = useState('');
     const [authorValue, setauthorValue] = useState('');
-    
-    //  this.state = {value:''}
-    //  this.onChange = this.handleChange.bind(this);
-    //  this.onSubmit = this.handleSubmit.bind(this);
-
-//    const handleChange = (event) =>{
-//         this.setState({value: event.target.value});
-//     }
-    
-    // const onChange = (e) =>{
-    //    this.state({[e.target.name]: e.target.value});
-    // }
+    const [responseData, setresponseData] = useState('');
     const onSubmit = (e) =>{
         e.preventDefault();
         // let comment = {author: this.state.author, author_comment: this.state.author_comment}
@@ -65,27 +54,21 @@ axios({
     setOutput(res.status === 200 ? "Comment saved" : "Comment cannot save");
 });
 
-// const body = new FormData();
-// body.append("author", FormData.author);
-// body.append("author_comment", FormData.author_comment)
-// fetch('/Thread1',{
-//    method: "post",
-//    body: body,
-// })
-
-// .then(function(response){
-//     return response.text();
-// }.bind(this))
-
-// .then(function (text){
-//     console.log(text);
-// })
-// .catch(function (error){
-//     console.error(error);
-// });
-
 };
-
+const[data, info] = React.useState([]);
+useEffect(()=>{
+        axios({
+            method: 'get',
+            url: '/getComment',
+            headers:{
+                
+            }
+        }).then(response=>{
+            console.log(response);
+            info(response.data);
+        });
+    },[]);
+  
 
     return(
         <body>
@@ -102,29 +85,17 @@ axios({
 ></input>
                     <br></br>
                     <input type="submit" onClick = {handleSubmit} value="Submit"></input>
+                                      
                 </form>
                 <div class="comments">
+                    <div>
+
+                    </div>
                 </div>
             </div>
         </body>
     );
 }
 
-
-function addComment(comment){
-  
-        var commentHtml = `
-        <div class="comment">
-            <div class="top-comment">
-                <p class="user">${comment.author}</p>
-            </div>
-            <p class="comment-ts">${new Date(comment.date).toLocaleString()}</p>
-            <div class="comment-content">
-                ${comment.content}
-            </div>
-        </div>
-        `;
-}
-var comments = document.querySelector(".comments");
 
 export default Thread1;

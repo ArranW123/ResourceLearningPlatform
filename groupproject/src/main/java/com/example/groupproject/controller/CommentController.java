@@ -34,36 +34,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class CommentController {
     @Autowired
     CommentRepository repo;
-    // @CrossOrigin(origins="http://localhost:3000")
-    // @PostMapping(path = "/Thread")
-    // public ResponseEntity<HttpStatus> newComment(HttpServletRequest request){
-    //     Comment newComment = new Comment();
-        
-    //     //Generating the date & time
-    //     LocalDateTime myDateObj = LocalDateTime.now();
-    //     DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("MMM dd yyyy HH:mm");  
-    //     String formattedDate = myDateObj.format(myFormatObj);  
-        
-    //     //Setting the variables into the repository
-    //     newComment.setAuthor(request.getParameter("author"));
-        
-    //     String TestAuthor = request.getParameter("author");
-    //     System.out.println(TestAuthor);
-
-    //     newComment.setAuthor_comment(request.getParameter("author_comment"));
-
-    //     String TestAuthorComment = request.getParameter("author_comment");
-    //     System.out.println(TestAuthorComment);
-
-    //     newComment.setDate(formattedDate);
-    //     repo.save(newComment);
-
-    //     return ResponseEntity.ok(HttpStatus.OK);
-    // }
-
+    
     @RequestMapping(value = "/Thread",method = RequestMethod.POST)
     ResponseEntity<?> Registercomment(@Valid @RequestBody Comment comment) {
         Comment c = new Comment();
+        //Setting the values from front-end into "c"
         c.setAuthor(comment.getAuthor());
         c.setAuthor_comment(comment.getAuthor_comment());
 
@@ -73,18 +48,26 @@ public class CommentController {
         String formattedDate = myDateObj.format(myFormatObj);  
         c.setDate(formattedDate);
       
-
         //Testing
         String author = c.getAuthor();
         System.out.println(author);
+        
         //Testing            
         String commentvar = c.getAuthor_comment();
         System.out.println(commentvar);
         System.out.println(formattedDate);
         
+        //Saving to repo
         repo.save(c);
         return ResponseEntity.ok(HttpStatus.OK);
         }
+
+        @RequestMapping(value = "/getComment",method = RequestMethod.GET)
+        List<Comment> getComment(@Valid Comment comment) {
+            return repo.findAll();
+        }
+
+
 }
 
 
