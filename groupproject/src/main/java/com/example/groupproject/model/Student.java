@@ -13,15 +13,26 @@ public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long StudentID;
-    
+
     @Column(nullable = false, length = 20)
     private String StudentFirstName;
-    
+
     @Column(nullable = false, length = 20)
     private String StudentLastName;
-    
+
     @Column(nullable = false, unique = true, length = 45)
     private String StudentEmailAddress;
+
+    public String getActiveStatus() {
+        return activeStatus;
+    }
+
+    public void setActiveStatus(String activeStatus) {
+        this.activeStatus = activeStatus;
+    }
+
+    @Column(nullable = false)
+    private String activeStatus;
 
     @Column(nullable = false, length = 64)
     private String password;
@@ -65,5 +76,5 @@ public class Student {
     public void setPassword(String password) {
         this.password = password;
     }
-    
+
 }
