@@ -34,33 +34,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class CommentController {
     @Autowired
     CommentRepository repo;
-    // @CrossOrigin(origins="http://localhost:3000")
-    // @PostMapping(path = "/Thread")
-    // public ResponseEntity<HttpStatus> newComment(HttpServletRequest request){
-    //     Comment newComment = new Comment();
-        
-    //     //Generating the date & time
-    //     LocalDateTime myDateObj = LocalDateTime.now();
-    //     DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("MMM dd yyyy HH:mm");  
-    //     String formattedDate = myDateObj.format(myFormatObj);  
-        
-    //     //Setting the variables into the repository
-    //     newComment.setAuthor(request.getParameter("author"));
-        
-    //     String TestAuthor = request.getParameter("author");
-    //     System.out.println(TestAuthor);
-
-    //     newComment.setAuthor_comment(request.getParameter("author_comment"));
-
-    //     String TestAuthorComment = request.getParameter("author_comment");
-    //     System.out.println(TestAuthorComment);
-
-    //     newComment.setDate(formattedDate);
-    //     repo.save(newComment);
-
-    //     return ResponseEntity.ok(HttpStatus.OK);
-    // }
-
+    
     @RequestMapping(value = "/Thread",method = RequestMethod.POST)
     ResponseEntity<?> Registercomment(@Valid @RequestBody Comment comment) {
         Comment c = new Comment();
