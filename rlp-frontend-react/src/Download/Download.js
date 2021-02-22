@@ -9,7 +9,7 @@ import chemistry from './chemistry.png';
 import maths from './Math.png';
 import ComputerScience from './cs.png';
 import RecentFiles from './Recentfiles.png';
-import {CircleArrow as ScrollUpButton} from "react-scroll-up-button";
+
 
 
 function Download(){
@@ -160,10 +160,6 @@ function Download(){
                 <a href = "mailto:rlp@example.com?subject = Feedback"> <button>Send Feedback</button></a>
                 </div>
             </div>
-
-            <div>
-            <ScrollUpButton  />
-            </div> 
         </div>
 
     );
