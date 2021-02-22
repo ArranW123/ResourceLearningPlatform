@@ -3,9 +3,4 @@
   <groupId>cs2001-2020_21-group_42</groupId>
   <artifactId>cs2001-2020_21-group_42</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <properties>
-  <maven.compiler.source>1.11</maven.compiler.source>
-  <maven.compiler.target>1.11</maven.compiler.target>
-</properties>
-
 </project>
