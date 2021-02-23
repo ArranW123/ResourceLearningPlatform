@@ -1,0 +1,13 @@
+.quizMenu-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 50px;
+}
+
+.quizMenu-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 16px 70px 16px 70px;
+}
