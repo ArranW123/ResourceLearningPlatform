@@ -31,6 +31,9 @@ function Header(){
                 <Link to={'/Forum'} class="forumbtn">Forum </Link>
                 &nbsp;
                 &nbsp;
+                <Link to={'/ToDoList'} class="todobtn">To-Do List </Link>
+                &nbsp;
+                &nbsp;
                 <Link to = {'/QuizMenu'} class="quizbtn">Quiz</Link>
                 </div>
                 {!sessionStorage.getItem("user") ? 
