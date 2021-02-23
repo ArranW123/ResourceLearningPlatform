@@ -6,7 +6,9 @@ function QuizMenu(){
         <body>
             <Header/>
             <div>
+                <div className='quizMenu-container'>
                 <h1>Quiz Menu</h1>
+                </div>
                 <li>
                     <div>
                     <Link to = {"Quiz1"}>
@@ -15,6 +17,7 @@ function QuizMenu(){
                     <h4>Difficulty: Easy</h4>
                     </Link>
                     </div>
+
                     <div>
                     <Link to = {"Quiz2"}>
                     <h2>Mathematic Quiz</h2>
@@ -22,6 +25,7 @@ function QuizMenu(){
                     <h4>Difficulty: Easy</h4>
                     </Link>
                     </div>
+
                     <div>
                     <Link to = {"Quiz3"}>
                     <h2>Science Quiz</h2>

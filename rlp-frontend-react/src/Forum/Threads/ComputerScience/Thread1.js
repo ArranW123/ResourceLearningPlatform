@@ -77,15 +77,12 @@ useEffect(()=>{
                 <p>I am having trouble with Java programming, can someone help me?</p>
                 <form>
                     <label for="Name">Name</label> 
-                    <input type = "text" name = "author" value = {authorValue} onChange={(e) => setauthorValue(e.target.value)}
-></input>
+                    <input type = "text" name = "author" value = {authorValue} onChange={(e) => setauthorValue(e.target.value)}></input>
                     <br></br>
                     <label for="Comment">Comment</label><br></br>
-                    <input type="text" name="author_comment" value = {commentValue} onChange={(e) => setcommentValue(e.target.value)}
-></input>
+                    <input type="text" name="author_comment" value = {commentValue} onChange={(e) => setcommentValue(e.target.value)}></input>
                     <br></br>
                     <input type="submit" onClick = {handleSubmit} value="Submit"></input>
-                                      
                 </form>
                 <div class="comments">
                     <div>
