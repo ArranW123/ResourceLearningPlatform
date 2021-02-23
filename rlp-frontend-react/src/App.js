@@ -21,6 +21,7 @@ import Quiz1 from "./Quiz/Quiz1"
 import Quiz2 from "./Quiz/Quiz2"
 import Quiz3 from "./Quiz/Quiz3"
 import QuizMenu from "./Quiz/QuizMenu"
+import ToDoList from "./To-do-List/todo";
 
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
               {<Route path='/sagar' component={Sagar}/>}
               {<Route path='/keyur' component={Keyur}/>}
               {<Route path='/sekhar' component={Sekhar}/>}
+              {<Route path='/ToDoList' component={ToDoList}/>}
           </Switch>
       </Router>
     );
