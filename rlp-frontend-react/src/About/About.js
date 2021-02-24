@@ -2,6 +2,7 @@ import './About.css';
 import axios from 'axios';
 import {Link, Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import Header from '../Header/Header';
+import fire from './fire';
 import about from './about.png';
 import avatar1 from './002-man.png';
 import avatar2 from './013-man.png';
