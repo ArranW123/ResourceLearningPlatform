@@ -21,7 +21,7 @@ body {
   .position{
     position: absolute;
     top: 30%;
-    background-color: #252d4a;
+    background-color: #1865F2;
     left: 30.5%;
     width: 100%;
     animation-name: nextQuestion;
@@ -29,7 +29,7 @@ body {
   }
   .app {
     position: absolute;
-    background-color: #252d4a;
+    background-color: #1865F2;
     width: 800px;
     min-height: 500px;
     height: min-content;
@@ -41,7 +41,7 @@ body {
   }
   
   .score-section {
-    background-color: #252d4a;
+    background-color: #1865F2;
     color: #ffffff;
 
     display: flex;
@@ -51,7 +51,7 @@ body {
   
   /* QUESTION/TIMER/LEFT SECTION */
   .question-section {
-    background-color: #252d4a;
+    background-color: #1865F2;
     color: #ffffff;
     width: 100%;
     position: relative;
@@ -59,19 +59,19 @@ body {
   
   .question-count {
     color: #ffffff;
-    background-color: #252d4a;
+    background-color:#1865F2;
     margin-bottom: 20px;
   }
   
   .question-count span {
     color: #ffffff;
-    background-color: #252d4a;
+    background-color: #1865F2;
     font-size: 28px;
   }
   
   .question-text {
     color: #ffffff;
-    background-color: #252d4a;
+    background-color: #1865F2;
     margin-bottom: 12px;
   }
   
@@ -87,7 +87,7 @@ body {
   
   /* ANSWERS/RIGHT SECTION */
   .answer-section {
-    background-color: #252d4a;
+    background-color: #1865F2;
 
     width: 100%;
     display: flex;
@@ -101,12 +101,12 @@ body {
     height: 20%;
     font-size: 16px;
     color: #ffffff;
-    background-color: #252d4a;
+    background-color: #1865F2;
     border-radius: 15px;
     padding: 5px;
     justify-content: flex-start;
     align-items: center;
-    border: 5px solid #234668;
+    border: 5px solid #1049b3;
     cursor: pointer;
 
   }
@@ -120,13 +120,30 @@ body {
   }
   
   .quizbutton:hover {
-    background-color: #555e7d;
+    background-color: #5f94f7;
   }
   
   .quizbutton:focus {
     outline: none;
   }
-  
+  .backbtn{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #1865F2;
+    font-size: 24px;
+    position:absolute;
+    right: 40px;
+    bottom: 40px; 
+    font-style: italic;
+    font-weight: bold;
+
+  }
+  .back{
+    text-decoration: none;
+    background-color: #1865F2;
+    display: flex;
+    font-size: 24px;
+  }
   .quizbutton svg {
     margin-right: 5px;
   }

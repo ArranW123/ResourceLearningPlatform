@@ -11,38 +11,34 @@ function forum() {
 
       <body>
         <div>
-          <div className="row">
-            <div className="col-lg-12">
+
               <br />
-              <ul>
-                <li>
+              <h1 className='forumTitle'>Forum</h1>
+                <div className="bottom">
                   <Link to={"ComputerScience"}>
                     <h4>Computer Science</h4>
-                  </Link>
-                  <div className="bottom">
-                    <p className="timestamp">Last Updated: 02/02/2021</p>
-                    <p className="comment-count">4 threads</p>
+                  <div class="forumInfo">
+                    <p>Last Updated: 25/02/2021</p>
+                    <p>1 Thread(s)</p>
                   </div>
-                </li>
+                  </Link>
+                </div>
 
                 <li>
+                <div className="bottom">
                   <h4>Mathematics</h4>
-                  <div className="bottom">
-                    <p className="timestamp">Last Updated: 02/02/2021</p>
-                    <p className="comment-count">4 threads</p>
+                  <p className="timestamp">Last Updated: 02/02/2021</p>
+                    <p className="comment-count">4 Thread(s)</p>
                   </div>
                 </li>
                 <li>
+                <div className="bottom">
                   <h4>Science</h4>
-                  <div className="bottom">
-                    <p className="timestamp">Last Updated: 02/02/2021</p>
-                    <p className="comment-count">4 threads</p>
+                  <p className="timestamp">Last Updated: 02/02/2021</p>
+                    <p className="comment-count">4 Thread(s)</p>
                   </div>
                 </li>
-              </ul>
-            </div>
           </div>
-        </div>
       </body>
     </React.Fragment>
   );

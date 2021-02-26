@@ -18,7 +18,8 @@ function Thread1(){
     const [commentValue, setcommentValue] = useState('');
     const [authorValue, setauthorValue] = useState('');
     const [responseData, setresponseData] = useState('');
-    const onSubmit = (e) =>{
+
+        const onSubmit = (e) =>{
         e.preventDefault();
         // let comment = {author: this.state.author, author_comment: this.state.author_comment}
         const {author, author_comment} = this.state;
@@ -38,6 +39,10 @@ function Thread1(){
 const handleContentChange = event => setInput(event.target.value);
 
 const handleSubmit = (event) => {
+if(authorValue == "" || commentValue == ""){
+    alert("Please fill out the form correctly..")
+    return false;
+}
 console.log(authorValue);
 console.log(commentValue);
 event.preventDefault()
@@ -50,6 +55,7 @@ axios({
         author_comment: commentValue,
     }
 }) .then(res => {
+    alert("Comment uploaded!")
     console.log(res);
     setOutput(res.status === 200 ? "Comment saved" : "Comment cannot save");
 });
@@ -60,9 +66,7 @@ useEffect(()=>{
         axios({
             method: 'get',
             url: '/getComment',
-            headers:{
-                
-            }
+            
         }).then(response=>{
             console.log(response);
             info(response.data);
@@ -74,19 +78,32 @@ useEffect(()=>{
         <body>
             <Header />
             <div>
-                <p>I am having trouble with Java programming, can someone help me?</p>
+                <h3 className='threadTitle'>I am having trouble with Java programming, can someone help me?</h3>
+                <p className='threadAuthor'>Author: Arran Weeresekere</p>
                 <form>
-                    <label for="Name">Name</label> 
-                    <input type = "text" name = "author" value = {authorValue} onChange={(e) => setauthorValue(e.target.value)}></input>
+                    <div className='threadInfo'>
+                    <label className='threadLabel' for="Name">Name</label>
                     <br></br>
-                    <label for="Comment">Comment</label><br></br>
-                    <input type="text" name="author_comment" value = {commentValue} onChange={(e) => setcommentValue(e.target.value)}></input>
+                    <input className = 'threadInput'type = "text" name = "author" value = {authorValue} onChange={(e) => setauthorValue(e.target.value)}></input>
                     <br></br>
-                    <input type="submit" onClick = {handleSubmit} value="Submit"></input>
+                    <label className = 'threadLabel' for="Comment">Comment</label><br></br>
+                    <textarea className='threadTextarea' type="text" name="author_comment" value = {commentValue} onChange={(e) => setcommentValue(e.target.value)}></textarea>
+                    <br></br>
+                    <br></br>
+                    <input className='threadSubmit'type="submit" onClick = {handleSubmit} value="Submit"></input>
+                    </div>
                 </form>
+                <h5>Comment Section</h5>
                 <div class="comments">
                     <div>
-
+                    {
+                    data?.map((author, index) => ( 
+                      <li key={index}>
+                          <p>{author.author}</p>        
+                          <p>{author.date}</p>                   
+                          <p>{author.author_comment}</p>
+                       </li>
+                    ))}
                     </div>
                 </div>
             </div>
