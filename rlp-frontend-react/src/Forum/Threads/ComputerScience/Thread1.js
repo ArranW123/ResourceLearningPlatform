@@ -93,15 +93,15 @@ useEffect(()=>{
                     <input className='threadSubmit'type="submit" onClick = {handleSubmit} value="Submit"></input>
                     </div>
                 </form>
-                <h5>Comment Section</h5>
-                <div class="comments">
+                <h5 className='commentsTitle'>Comment Section</h5>
+                <div >
                     <div>
                     {
                     data?.map((author, index) => ( 
-                      <li key={index}>
-                          <p>{author.author}</p>        
-                          <p>{author.date}</p>                   
-                          <p>{author.author_comment}</p>
+                      <li key={index} class="comments">
+                          <p className='commentsAuthor'>{author.author}</p>        
+                          <p className='commentsDate'>{author.date}</p>                   
+                          <p className='comment'>{author.author_comment}</p>
                        </li>
                     ))}
                     </div>

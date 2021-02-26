@@ -30,7 +30,7 @@
     padding: 12px 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
     background-color: white;
     font-size: 16px;
     
@@ -81,7 +81,42 @@
     border: 2px solid #555;
 }
 
-.comments *{
-    background-color: rgb(187, 187, 187);
+.comments {
+    /* background-color: rgb(187, 187, 187); */
+    background-color: #4f89f5;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width: 1000px;
+    border-radius: 5px;
+    border: 2px solid #0059ff;
     /* border: 2px solid rgb(139, 139, 139); */
 }
+.comments *{
+    margin-bottom: 0px;
+    margin-left: 10px;
+    background-color: #4f89f5;
+    /* background-color: rgb(187, 187, 187); */
+    
+}
+.commentsDate{
+    font-size:medium;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.commentsAuthor{
+    font-size: medium;
+    font-weight: normal;
+}
+.commentsTitle{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 50px 50px 25px 10px;
+    margin-bottom: 25px;
+}
+.comment{
+    margin-bottom: 10px;
+
+}
+
