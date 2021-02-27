@@ -2,44 +2,43 @@
 import React, { useState } from 'react';
 import "./Quiz1.css"
 import Header from '../Header/Header';
-import { Link } from 'react-router-dom';
 
 export default function Quiz1() {
 	const questions = [
 		{
-			questionText: 'What does "GUI" stand for?',
+			questionText: 'What is the capital of France?',
 			answerOptions: [
-				{ answerText: 'Graphical Utility Interface', isCorrect: false },
-				{ answerText: 'Graphics Underneath Interface', isCorrect: false },
-				{ answerText: 'Graphical User Interface', isCorrect: true },
-				{ answerText: 'Graphic Uplink Interface', isCorrect: false },
+				{ answerText: 'New York', isCorrect: false },
+				{ answerText: 'London', isCorrect: false },
+				{ answerText: 'Paris', isCorrect: true },
+				{ answerText: 'Dublin', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'What type of storage does not accept new information?',
+			questionText: 'Who is CEO of Tesla?',
 			answerOptions: [
-				{ answerText: 'Hard Drive', isCorrect: false },
-				{ answerText: 'ROM', isCorrect: true },
-				{ answerText: 'RAM', isCorrect: false },
-				{ answerText: 'Removable Media', isCorrect: false },
+				{ answerText: 'Jeff Bezos', isCorrect: false },
+				{ answerText: 'Elon Musk', isCorrect: true },
+				{ answerText: 'Bill Gates', isCorrect: false },
+				{ answerText: 'Tony Stark', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'Microprocessors are used in?',
+			questionText: 'The iPhone was created by which company?',
 			answerOptions: [
-				{ answerText: 'Computers', isCorrect: true },
-				{ answerText: 'DVD players', isCorrect: false },
-				{ answerText: 'Calculators', isCorrect: false },
-				{ answerText: 'Remote Controls', isCorrect: false },
+				{ answerText: 'Apple', isCorrect: true },
+				{ answerText: 'Intel', isCorrect: false },
+				{ answerText: 'Amazon', isCorrect: false },
+				{ answerText: 'Microsoft', isCorrect: false },
 			],
 		},
 		{
-			questionText: 'What componenet of the computer is correctly associated with the function it performs?',
+			questionText: 'How many Harry Potter books are there?',
 			answerOptions: [
-				{ answerText: 'Microprocessor: Storage', isCorrect: false },
-				{ answerText: 'Random Access Memory: Processing', isCorrect: false },
-				{ answerText: 'Optical Drive: Input', isCorrect: false },
-				{ answerText: 'Monitor: Output', isCorrect: true },
+				{ answerText: '1', isCorrect: false },
+				{ answerText: '4', isCorrect: false },
+				{ answerText: '6', isCorrect: false },
+				{ answerText: '7', isCorrect: true },
 			],
 		},
 	];
@@ -62,16 +61,13 @@ export default function Quiz1() {
 		}
 	};
 	return (
-	<body>
+	<body className = 'body'>
 		<Header />
 		<div className = 'position'> 
 		<div className='app'>
 			{showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}
-					<div className='back'>
-						<Link to = {"QuizMenu"} className='backbtn'>Back</Link>
-					</div>
 				</div>
 			) : (
 				<>

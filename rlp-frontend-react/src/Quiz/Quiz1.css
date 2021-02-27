@@ -11,7 +11,7 @@ body {
 }
   @keyframes nextQuestion{
   0%   {left: 0%; top:30%;}
-  100% {left:30.5%; top:30%;}
+  100% {left:38%; top:30%;}
   }
   @keyframes finishedQuestion{
     0%   {left:38%; top:30%;}
@@ -21,17 +21,18 @@ body {
   .position{
     position: absolute;
     top: 30%;
-    background-color: #1865F2;
-    left: 30.5%;
+    background-color: #252d4a;
+    left: 38%;
+    right: 62%;
     width: 100%;
     animation-name: nextQuestion;
     animation-duration: 0.8s;
   }
   .app {
     position: absolute;
-    background-color: #1865F2;
-    width: 800px;
-    min-height: 500px;
+    background-color: #252d4a;
+    width: 450px;
+    min-height: 200px;
     height: min-content;
     border-radius: 15px;
     padding: 20px;
@@ -41,7 +42,7 @@ body {
   }
   
   .score-section {
-    background-color: #1865F2;
+    background-color: #252d4a;
     color: #ffffff;
 
     display: flex;
@@ -51,7 +52,7 @@ body {
   
   /* QUESTION/TIMER/LEFT SECTION */
   .question-section {
-    background-color: #1865F2;
+    background-color: #252d4a;
     color: #ffffff;
     width: 100%;
     position: relative;
@@ -59,19 +60,19 @@ body {
   
   .question-count {
     color: #ffffff;
-    background-color:#1865F2;
+    background-color: #252d4a;
     margin-bottom: 20px;
   }
   
   .question-count span {
     color: #ffffff;
-    background-color: #1865F2;
+    background-color: #252d4a;
     font-size: 28px;
   }
   
   .question-text {
     color: #ffffff;
-    background-color: #1865F2;
+    background-color: #252d4a;
     margin-bottom: 12px;
   }
   
@@ -87,7 +88,7 @@ body {
   
   /* ANSWERS/RIGHT SECTION */
   .answer-section {
-    background-color: #1865F2;
+    background-color: #252d4a;
 
     width: 100%;
     display: flex;
@@ -96,19 +97,18 @@ body {
   }
   
   .quizbutton {
-    
     width: 100%;
-    height: 20%;
     font-size: 16px;
     color: #ffffff;
-    background-color: #1865F2;
+    background-color: #252d4a;
     border-radius: 15px;
+    display: flex;
     padding: 5px;
     justify-content: flex-start;
     align-items: center;
-    border: 5px solid #1049b3;
+    border: 5px solid #234668;
     cursor: pointer;
-
+    
   }
   
   .correct {
@@ -120,30 +120,13 @@ body {
   }
   
   .quizbutton:hover {
-    background-color: #5f94f7;
+    background-color: #555e7d;
   }
   
   .quizbutton:focus {
     outline: none;
   }
-  .backbtn{
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #1865F2;
-    font-size: 24px;
-    position:absolute;
-    right: 40px;
-    bottom: 40px; 
-    font-style: italic;
-    font-weight: bold;
-
-  }
-  .back{
-    text-decoration: none;
-    background-color: #1865F2;
-    display: flex;
-    font-size: 24px;
-  }
+  
   .quizbutton svg {
     margin-right: 5px;
   }
