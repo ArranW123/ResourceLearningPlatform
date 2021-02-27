@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./Quiz1.css"
 import Header from '../Header/Header';
+import { Link } from 'react-router-dom';
 
 export default function Quiz2() {
 	const questions = [
@@ -67,6 +68,9 @@ export default function Quiz2() {
 			{showScore ? (
 				<div className='score-section'>
 					You scored {score} out of {questions.length}
+					<div className='back'>
+						<Link to = {"QuizMenu"} className='backbtn'>Back</Link>
+					</div>
 				</div>
 			) : (
 				<>
