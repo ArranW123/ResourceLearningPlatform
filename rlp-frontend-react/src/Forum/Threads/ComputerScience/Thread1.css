@@ -1,29 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap');
 
-*{
-    font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: black;
-    font-size: 20px;
-    background-color: blanchedalmond;
-    text-decoration: none;
+.threadTitle{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 25px 50px 25px 25px;
 }
-.h2{
-    font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: black;
-    font-size: 20px;
-    background-color: blanchedalmond;
-    text-decoration: none;
+.threadAuthor{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 50px 50px 25px 25px;
 }
 
-.submit{
-    border-radius: 80px;
-    padding: 13px 17px;
-    color: white;
-    background-color: #1865F2;
+.threadInfo{
+    width: 40%;
+    background-color: #f3d8b1;
+    border: 5px 5px 5px 5px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 25px 25px 25px 25px;
+    margin: 40px 25px 50px 25px ;
 }
+.threadTextarea {
+    display: flex;
+    height: 150px;
+    width: 700px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+    
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+.threadInput {
+    background-color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+.threadLabel{
+    background-color: #f3d8b1;
+}
+
+
+.threadSubmit{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+

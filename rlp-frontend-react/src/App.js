@@ -18,6 +18,11 @@ import Sagar from "./Sagar/sagar"
 import Keyur from "./Keyur/keyur"
 import Sekhar from "./Sekhar/sekhar"
 import Quiz1 from "./Quiz/Quiz1"
+import Quiz2 from "./Quiz/Quiz2"
+import Quiz3 from "./Quiz/Quiz3"
+import QuizMenu from "./Quiz/QuizMenu"
+import ToDoList from "./To-do-List/todo";
+
 
 function App() {
     return (
@@ -27,6 +32,9 @@ function App() {
               <Route exact path='/' component={Homepage} />
               {<Route path='/upload' component={Upload} />}
               {<Route path='/Quiz1' component={Quiz1} />}
+              {<Route path='/Quiz2' component={Quiz2} />}
+              {<Route path='/Quiz3' component={Quiz3} />}
+              {<Route path='/QuizMenu' component={QuizMenu} />}
               {<Route path='/download' component={Download} />}
               {<Route path='/about' component={About} />}
               {<Route path='/login' component={Login} />}
@@ -41,6 +49,7 @@ function App() {
               {<Route path='/sagar' component={Sagar}/>}
               {<Route path='/keyur' component={Keyur}/>}
               {<Route path='/sekhar' component={Sekhar}/>}
+              {<Route path='/ToDoList' component={ToDoList}/>}
           </Switch>
       </Router>
     );
