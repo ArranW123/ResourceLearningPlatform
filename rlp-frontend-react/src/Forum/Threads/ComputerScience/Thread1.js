@@ -91,7 +91,7 @@ axios({
             <Header />
             <h1>Hello!</h1>
             <div>
-                <p>I am having trouble with Java programming, can someone help me?</p>
+                <p>If you having trouble with any subject, can leave a comment. we will try our best to help you.</p>
                 <form>
                     <label for="Name">Name</label> 
                     <input type = "text" name = "author" value = {authorValue} onChange={(e) => setauthorValue(e.target.value)}

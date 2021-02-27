@@ -20,3 +20,10 @@
     background-color: blanchedalmond;
     text-decoration: none;
 }
+
+.submit{
+    border-radius: 80px;
+    padding: 13px 17px;
+    color: white;
+    background-color: #1865F2;
+}

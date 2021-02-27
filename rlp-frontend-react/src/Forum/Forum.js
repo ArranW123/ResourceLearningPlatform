@@ -27,14 +27,18 @@ function forum() {
                 </li>
 
                 <li>
+                <Link to={"ComputerScience"}>
                   <h4>Mathematics</h4>
+                </Link>
                   <div className="bottom">
                     <p className="timestamp">Last Updated: 02/02/2021</p>
                     <p className="comment-count">4 threads</p>
                   </div>
                 </li>
                 <li>
-                  <h4>Science</h4>
+                  <Link to={"ComputerScience"}>
+                    <h4>Science</h4>
+                  </Link>
                   <div className="bottom">
                     <p className="timestamp">Last Updated: 02/02/2021</p>
                     <p className="comment-count">4 threads</p>
