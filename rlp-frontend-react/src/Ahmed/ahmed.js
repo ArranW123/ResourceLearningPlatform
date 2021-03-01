@@ -2,7 +2,7 @@ import './ahmed.css';
 import axios from 'axios';
 import Header from '../Header/Header';
 import avatar1 from './013-man.png';
-import Data from "./data.json"
+//import Data from "./data.json"
 
 function Ahmed(){
   return(
