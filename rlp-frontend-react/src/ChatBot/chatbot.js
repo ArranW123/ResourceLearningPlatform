@@ -8,6 +8,10 @@ import 'firebase/auth';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 
+import axios from 'axios';
+import {Link, Switch, Route, BrowserRouter as Router } from "react-router-dom";
+import Header from '../Header/Header';
+
 firebase.initializeApp({
   //config
   apiKey: "AIzaSyARxeXD1DVCHrruGiul4UKy23tgEfSH_rU",
@@ -43,7 +47,7 @@ function SignOut(){
 
 function ChatMessage(props) {
   const {text, uid} = props.message;
-  
+
   return <p>{text}</p>
 }
 
@@ -63,11 +67,8 @@ function ChatRoom(){
 }
 
 return (
-  <div className="App">
-
-    <header>
-
-    </header>
+  <div>
+  <Header/>
 
     <section>
       {user ? <ChatRoom /> : <SignIn />}

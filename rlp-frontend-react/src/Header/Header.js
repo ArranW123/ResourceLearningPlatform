@@ -23,6 +23,9 @@ function Header(){
                 &nbsp;
                 &nbsp;
                 <Link to={'/Forum'} class="forumbtn" href="">Forum </Link>
+                &nbsp;
+                &nbsp;
+                <Link to={'/chatbot'} class="chatbotbtn" href="">Chat Room </Link>
 
                 </div>
                 <div>
