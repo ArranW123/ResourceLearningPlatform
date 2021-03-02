@@ -11,6 +11,17 @@
     text-decoration: none;
 }
 
+.App {
+  text-align: center;
+  max-width: 728px;
+  margin: 0 auto;
+}
+
+.App header {
+  background-color: blanchedalmond;
+  
+}
+
 .logo img{
   height: 80px;
   padding-top: 7px;
