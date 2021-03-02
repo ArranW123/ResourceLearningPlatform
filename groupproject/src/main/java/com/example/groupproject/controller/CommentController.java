@@ -36,6 +36,7 @@ public class CommentController {
     CommentRepository repo;
     
     @RequestMapping(value = "/Thread",method = RequestMethod.POST)
+	public
     ResponseEntity<?> Registercomment(@Valid @RequestBody Comment comment) {
         Comment c = new Comment();
         //Setting the values from front-end into "c"
@@ -66,8 +67,7 @@ public class CommentController {
         List<Comment> getComment(@Valid Comment comment) {
             return repo.findAll();
         }
-
-
+        
 }
 
 
