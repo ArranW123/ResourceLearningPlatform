@@ -78,7 +78,8 @@ useEffect(()=>{
         <body>
             <Header />
             <div>
-
+                <h3 className='threadTitle'>I am having trouble with Java programming, can someone help me?</h3>
+                <p className='threadAuthor'>Author: Arran Weeresekere</p>
                 <form>
                     <div className='threadInfo'>
                     <label className='threadLabel' for="Name">Name</label>
