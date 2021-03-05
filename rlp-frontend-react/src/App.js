@@ -7,6 +7,7 @@ import Header from "./Header/Header"
 import Homepage from "./Homepage/Homepage"
 import Download from "./Download/Download"
 import About from "./About/About"
+import ChatRoom from "./ChatRoom/chatroom"
 import Login from "./Login/Login"
 import Signup from "./Signup/Signup"
 import forum from "./Forum/Forum"
@@ -28,6 +29,7 @@ function App() {
               {<Route path='/upload' component={Upload} />}
               {<Route path='/download' component={Download} />}
               {<Route path='/about' component={About} />}
+              {<Route path='/chatroom' component={ChatRoom} />}
               {<Route path='/login' component={Login} />}
               {<Route path='/signup' component={Signup} />}
               {<Route path='/Forum' component={forum} />}
