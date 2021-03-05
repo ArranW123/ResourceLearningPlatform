@@ -29,7 +29,7 @@ function App() {
               {<Route path='/upload' component={Upload} />}
               {<Route path='/download' component={Download} />}
               {<Route path='/about' component={About} />}
-              {<Route path='/chatbot' component={ChatRoom} />}
+              {<Route path='/chatroom' component={ChatRoom} />}
               {<Route path='/login' component={Login} />}
               {<Route path='/signup' component={Signup} />}
               {<Route path='/Forum' component={forum} />}

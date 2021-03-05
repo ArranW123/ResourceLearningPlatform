@@ -163,3 +163,11 @@ p{
   color: white;
   background-color: #1865F2;
 }
+
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    margin-top: -100%;
+    margin: 16px 100px 16px 100px;
+}

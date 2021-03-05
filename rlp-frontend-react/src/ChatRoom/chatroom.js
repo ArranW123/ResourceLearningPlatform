@@ -36,7 +36,8 @@ function App()
   return (
     <div className="App">
     <header>
-      <h1>ChatRoom</h1>
+      <h1>Chat Room</h1>
+      <Link to={'/'} className="homebtn">Home</Link>
       <SignOut />
     </header>
 
@@ -84,7 +85,7 @@ function ChatRoom(){
 
     await messagesRef.add({
       text: formValue,
-      createdAt: firebase.FieldView.serverTimestamp(),
+      createdAt: firebase.firestore.FieldValue.serverTimestamp(),
       uid,
       photoURL
     })
@@ -101,7 +102,7 @@ function ChatRoom(){
     </main>
     <form onSubmit={sendMessage}>
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Type message here" />
-      <button type="submit" disabled={!formValue}></button>
+      <button type="submit" disabled={!formValue}>Send</button>
     </form>
     </>
   )
@@ -109,7 +110,7 @@ function ChatRoom(){
 }
 
 function ChatMessage(props) {
-  const {text, uid} = props.message;
+  const {text, uid, photoURL} = props.message;
 
   const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
 
@@ -117,6 +118,7 @@ function ChatMessage(props) {
   return(
     <>
     <div className={'message ${messageClass}'}>
+      <img src={photoURL} />
       <p>{text}</p>
     </div>
     </>

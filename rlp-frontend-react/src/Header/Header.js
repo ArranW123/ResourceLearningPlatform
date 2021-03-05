@@ -25,7 +25,7 @@ function Header(){
                 <Link to={'/Forum'} class="forumbtn" href="">Forum </Link>
                 &nbsp;
                 &nbsp;
-                <Link to={'/chatbot'} class="chatbotbtn" href="">Chat Room </Link>
+                <Link to={'/chatroom'} class="chatroombtn" href="">Chat Room </Link>
 
                 </div>
                 <div>
