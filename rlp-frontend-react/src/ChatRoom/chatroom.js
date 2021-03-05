@@ -35,7 +35,6 @@ function App()
 
   return (
     <div className="App">
-    <Header />
     <header>
       <h1>ChatRoom</h1>
       <SignOut />
