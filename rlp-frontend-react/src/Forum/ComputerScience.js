@@ -13,23 +13,21 @@ return(
             &nbsp;
             &nbsp;
 
-
-            <h1 className='forumTitle'>Welcome to Computer Science</h1>
-
-
+            <h1>Welcome</h1>
+            &nbsp;
+            <h2> If you have any Problem or difficulty in your subject don't worry here you can get the help </h2>
             &nbsp;
             &nbsp;
             <h3>
             <Link to={'/Thread1'} className="kpbt"> HELP ME! </Link>
             </h3>
         </div>
-
-            <div className = 'bottom'>
-            <Link to={"/Thread1"}><h2>Computer Science is hard! HELP ME!!!</h2></Link>
+            <div>
+            
             <p>Last Updated: ...</p>
             <p>Comments: ...</p>
             <h2></h2>
-
+            
             </div>
         </div>
     </body>
