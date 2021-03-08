@@ -45,9 +45,9 @@ function QuizMenu(){
                     
                     <div className = 'quizMenu-container'>
                     <div className='quizInfo'>
-                    <Link to = {"Quiz1"}>
-                    <h2>Computer Science Quiz</h2>
-                    <p>4 Questions</p>
+                    <Link to = {"Quiz4"}>
+                    <h2>Knowledge Quiz</h2>
+                    <p>10 Questions</p>
                     <p>Difficulty: Medium</p>
                     </Link>
                     </div>
