@@ -13,29 +13,29 @@ function QuizMenu(){
                 <li>
                     
                     <div className = 'quizMenu-container'>
-                    <div className='quizInfo'>
-                    <Link to = {"Quiz1"}>
-                    <h2>Computer Science Quiz</h2>
-                    <p>4 Questions</p>
-                    <p>Difficulty: Easy</p>
-                    </Link>
+                        <div className='quizInfo'>
+                        <Link to = {"Quiz1"}>
+                        <h2>Computer Science Quiz</h2>
+                        <p>4 Questions</p>
+                        <p>Difficulty: Easy</p>
+                        </Link>
                     </div>
 
                     <div className='quizInfo'>
-                    <Link to = {"Quiz2"}>
-                    <h2>Mathematic Quiz</h2>
-                    <p>4 Questions</p>
-                    <p>Difficulty: Easy</p>
-                    </Link>
+                        <Link to = {"Quiz2"}>
+                        <h2>Mathematic Quiz</h2>
+                        <p>4 Questions</p>
+                        <p>Difficulty: Easy</p>
+                        </Link>
                     </div>
 
                     <div className = 'quizInfo'>
-                    <Link to = {"Quiz3"}>
-                    <h2>Science Quiz</h2>
-                    <p>6 Questions</p>
-                    <p>Difficulty: Easy</p>
-                    </Link>
-                    </div>
+                        <Link to = {"Quiz3"}>
+                        <h2>Science Quiz</h2>
+                        <p>6 Questions</p>
+                        <p>Difficulty: Easy</p>
+                        </Link>
+                        </div>
                     </div>
                     
 
@@ -44,15 +44,13 @@ function QuizMenu(){
                 <li>
                     
                     <div className = 'quizMenu-container'>
-                    <div className='quizInfo'>
-                    <Link to = {"Quiz4"}>
-                    <h2>Knowledge Quiz</h2>
-                    <p>10 Questions</p>
-                    <p>Difficulty: Medium</p>
-                    </Link>
-                    </div>
-
-                   
+                        <div className='quizInfo'>
+                        <Link to = {"Quiz4"}>
+                        <h2>Knowledge Quiz</h2>
+                        <p>10 Questions</p>
+                        <p>Difficulty: Medium</p>
+                        </Link>
+                        </div>
                     </div>
                     
 
