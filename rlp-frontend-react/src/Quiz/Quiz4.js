@@ -9,8 +9,8 @@ export default function Quiz4() {
 			questionText: 'Which is the fastest Supercomuter?',
 			answerOptions: [
 				{ answerText: 'Cray-2', isCorrect: false },
-                { answerText: 'LANL', isCorrect: true },
-				{ answerText: 'Tianhe-1A', isCorrect: false },
+                { answerText: 'LANL', isCorrect: false },
+				{ answerText: 'Tianhe-1A', isCorrect: true },
 				{ answerText: 'MGGRAPE-3', isCorrect: false },
 			],
 		},
@@ -18,18 +18,18 @@ export default function Quiz4() {
 			questionText: 'Which of these is not a moon of Jupiter?',
 			answerOptions: [
 				{ answerText: 'Europa', isCorrect: false },
-                { answerText: 'Ganymede', isCorrect: true },
+                { answerText: 'Ganymede', isCorrect: false },
 				{ answerText: ' Leda', isCorrect: false },
-				{ answerText: 'Rhea', isCorrect: false },
+				{ answerText: 'Rhea', isCorrect: true },
 			],
 		},
 		{
 			questionText: 'Which of these was first introduced in 1998 Commonwealth Games?',
 			answerOptions: [
 				{ answerText: 'Football', isCorrect: false },
-                { answerText: 'Lawnball', isCorrect: true },
+                { answerText: 'Lawnball', isCorrect: false },
 				{ answerText: 'Golf', isCorrect: false },
-				{ answerText: 'Cricket', isCorrect: false },
+				{ answerText: 'Cricket', isCorrect: true },
 			],
 		},
 		{
@@ -45,8 +45,8 @@ export default function Quiz4() {
 			questionText: 'When is the Red Cross Day Celebrated?',
 			answerOptions: [
 				{ answerText: 'April 1', isCorrect: false },
-                { answerText: 'October 24', isCorrect: true },
-				{ answerText: 'May 8', isCorrect: false },
+                { answerText: 'October 24', isCorrect: false },
+				{ answerText: 'May 8', isCorrect: true },
 				{ answerText: ' December 3', isCorrect: false },
 			],
 		},
@@ -54,9 +54,9 @@ export default function Quiz4() {
 			questionText: 'Which of these is not a car of Lamborghini?',
 			answerOptions: [
 				{ answerText: 'Countach', isCorrect: false },
-                { answerText: 'LM002', isCorrect: true },
+                { answerText: 'LM002', isCorrect: false },
 				{ answerText: 'Miura', isCorrect: false },
-				{ answerText: 'Revension', isCorrect: false },
+				{ answerText: 'Revension', isCorrect: true },
 			],
 		},
         {
@@ -79,16 +79,16 @@ export default function Quiz4() {
 			questionText: 'Which of these is not an antivirus?',
 			answerOptions: [
 				{ answerText: 'ESET', isCorrect: false },
-                { answerText: 'Avast', isCorrect: true },
-				{ answerText: 'Firefox', isCorrect: false },
+                { answerText: 'Avast', isCorrect: false },
+				{ answerText: 'Firefox', isCorrect: true },
 				{ answerText: 'Nortorn', isCorrect: false },
 			],
 		},{
 			questionText: 'Which of these elements do not belong to the Period 5 of the Modern Periodic Table?',
 			answerOptions: [
 				{ answerText: 'Ag(Silver)', isCorrect: false },
-                { answerText: 'Xe(Xenon)', isCorrect: true },
-				{ answerText: 'Au(gold)', isCorrect: false },
+                { answerText: 'Xe(Xenon)', isCorrect: false },
+				{ answerText: 'Au(gold)', isCorrect: true },
 				{ answerText: 'Cd(Cadmium)', isCorrect: false },
 			],
 		},
