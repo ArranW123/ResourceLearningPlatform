@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap');
 
-/* *{
+*{
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
     margin: 0;
@@ -9,50 +9,8 @@
     font-size: 20px;
     background-color: blanchedalmond;
     text-decoration: none;
-} */
-.bottom{
-    color: white;
-    position: relative;
-    width: 850px;
-    padding: 25px 50px 25px 50px;
-    margin: 50px 50px 50px 50px ;
-    border-radius: 10px;
-    /* text-align: center; */
-    box-shadow: 2.5px 2.5px 5px black;
-    background-color: #1865F2;
 }
-.bottom h4{
-    background-color: #1865F2;
-    color: white;
-}
-.bottom h2{
-    background-color: #1865F2;
-    color: white;
-}
-.bottom p{
-    background-color: #1865F2;
-    color: white;
-}
-
-.forumTitle{
-        
-    /* display: flex; */
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 16px 70px 16px 25px;
-
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 50px;
-    padding: 25px 50px 50px 25px;
-}
-
-.forumInfo{
-    background-color: #1865F2;
-    color: white;
-}
-/* .h2{
+.h2{
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
     margin: 0;
@@ -61,4 +19,11 @@
     font-size: 20px;
     background-color: blanchedalmond;
     text-decoration: none;
+}
 
+.kpbt{
+    border-radius: 80px;
+    padding: 13px 17px;
+    color: white;
+    background-color: #1865F2;
+}
