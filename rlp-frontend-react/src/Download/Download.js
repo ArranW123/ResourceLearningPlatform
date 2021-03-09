@@ -109,11 +109,11 @@ function Download(){
                   <h1>Computer Science</h1>
                   <div className="body">
                   <div className="links">
-                  <a href="http://localhost:8080/files/1">1. Introduction to Computer Systems </a>
+                  <a href="http://localhost:8080/files/7">1. Introduction to Computer Systems </a>
                   <br/>
-                  <a href="http://localhost:8080/files/1">2. Principles of Programming </a>
+                  <a href="http://localhost:8080/files/8">2. Principles of Programming </a>
                   <br/>
-                  <a href="http://localhost:8080/files/1">3. Algorithms and Data Structures </a>
+                  <a href="http://localhost:8080/files/9">3. Algorithms and Data Structures </a>
                  </div>
                  <img className="cs-img" src={ComputerScience} alt="Programming Photo"></img>
                  </div>
