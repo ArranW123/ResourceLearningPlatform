@@ -74,10 +74,7 @@ function Download(){
                   <h1>
                       Download your resources below
                   </h1>
-                  {/* <a href="http://localhost:8080/files/2" target='_blank' >Database File </a>
-                  <button className="btn" onClick={handleSubmit} >Download File </button>
-
-                  <a href="https://chemrevise.files.wordpress.com/2019/12/1.1-revision-guide-atomic-structure-aqa.pdf" target='_blank'>1.1 revision guide Atomic Structure </a> */}
+                  
               </div>
               <div className="files">
                 <div className="chem">
@@ -85,9 +82,6 @@ function Download(){
                 <div className="body">
                   <div className="links">
                   <a href="http://localhost:8080/files/1">1. Atomic Structure </a>
-                  {/* <p> Atoms consist of a nucleus containing protons and neutrons, surrounded by electrons in shells. 
-                    <br></br>The numbers of subatomic particles in an atom can be calculated from its atomic number and mass number.
-                    <br></br>Click above to learn more</p> */}
                    <br/>
                   <a href="http://localhost:8080/files/2" target='_blank' >2. Reaction Kinetics</a>
                   <br/>
@@ -101,11 +95,11 @@ function Download(){
                   <h1>Mathematics</h1>
                   <div className="body">
                   <div className="links">
-                  <a href="http://localhost:8080/files/1">1. Exponentials and Logarithms </a>
+                  <a href="http://localhost:8080/files/4">1. Exponentials and Logarithms </a>
                   <br/>
-                  <a href="http://localhost:8080/files/1">2. Equations and Inequalites </a>
+                  <a href="http://localhost:8080/files/5">2. Equations and Inequalites </a>
                   <br/>
-                  <a href="http://localhost:8080/files/1">3. The Binomial Expansion </a>
+                  <a href="http://localhost:8080/files/6">3. The Binomial Expansion </a>
                  </div>
                  <img className="math-img" src={maths} alt="Maths Photo"></img>
                  </div>
