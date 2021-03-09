@@ -24,7 +24,20 @@ function forum() {
                   </Link>
                 </div>
 
-                
+                <li>
+                <div className="bottom">
+                  <h4>Mathematics</h4>
+                  <p className="timestamp">Last Updated: 02/02/2021</p>
+                    <p className="comment-count">4 Thread(s)</p>
+                  </div>
+                </li>
+                <li>
+                <div className="bottom">
+                  <h4>Science</h4>
+                  <p className="timestamp">Last Updated: 02/02/2021</p>
+                    <p className="comment-count">4 Thread(s)</p>
+                  </div>
+                </li>
           </div>
       </body>
     </React.Fragment>
