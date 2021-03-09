@@ -24,10 +24,7 @@ function forum() {
                   </Link>
                 </div>
 
-                <li>
-
-                  </div>
-                </li>
+                
           </div>
       </body>
     </React.Fragment>
