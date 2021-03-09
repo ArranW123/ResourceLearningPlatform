@@ -67,7 +67,6 @@ const ToDoList = () => {
     return (
       <div id="todo-list">
         <h1>Todo List</h1>
-        <div className="form-todo">
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -76,7 +75,6 @@ const ToDoList = () => {
           />
           <button type="submit">Add Todo</button>
         </form>
-        </div>
         {todos.map((todo) => (
           <div key={todo.id} className="todo">
             <div className="todo-text">

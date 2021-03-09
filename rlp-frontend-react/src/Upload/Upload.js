@@ -43,7 +43,7 @@ const handleChange = event => setFile(event.target.files[0]);
         <div className="form">
           <input type= "file" multiple onChange={handleChange} />
           &nbsp;
-          <button className="upload button" onClick={handleSubmit}>
+          <button className="btn" onClick={handleSubmit}>
               Upload File
           </button>
         </div>

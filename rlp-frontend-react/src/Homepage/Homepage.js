@@ -47,7 +47,7 @@ function Homepage(){
     </div>
 
     <div className="signup">
-        <div class="title1">
+        <div class="title">
             <h1>Join Us Today</h1>
         </div>
 
