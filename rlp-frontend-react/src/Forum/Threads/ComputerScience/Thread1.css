@@ -59,4 +59,64 @@
     cursor: pointer;
     text-align: center;
     text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #0059ff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
 }
+.threadSubmit:hover{
+    background-color: #0048ce
+}
+.threadSubmit:active{
+    background-color: #0048ce;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.threadTextarea:focus{
+    border: 2px solid #555;
+}
+.threadInput:focus{
+    border: 2px solid #555;
+}
+
+.comments {
+    /* background-color: rgb(187, 187, 187); */
+    background-color: #4f89f5;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    width: 1000px;
+    border-radius: 5px;
+    border: 2px solid #0059ff;
+    /* border: 2px solid rgb(139, 139, 139); */
+}
+.comments *{
+    margin-bottom: 0px;
+    margin-left: 10px;
+    background-color: #4f89f5;
+    /* background-color: rgb(187, 187, 187); */
+    
+}
+.commentsDate{
+    font-size:medium;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.commentsAuthor{
+    font-size: medium;
+    font-weight: normal;
+}
+.commentsTitle{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 50px 50px 25px 10px;
+    margin-bottom: 25px;
+}
+.comment{
+    margin-bottom: 10px;
+
+}
+
