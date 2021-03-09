@@ -27,6 +27,8 @@
     font-size: 2rem;
     font-weight: bold;
     margin: 16px 70px 16px 70px;
+    text-align:left;
+
 }
 
 .banner-container h2 {
@@ -40,8 +42,8 @@
     padding: 10px 30px;
 }
 
-.form-email input{
-    height: 62px;
+.form-email input {
+    height: 62px;  
     width: 450px;
     color: black;
     border-style: solid;
@@ -87,10 +89,10 @@
     padding: 0px 10px;
 }
 
-.title h1{
-    font-size: 1.9rem;
+.title1 h1{
+    font-size: 1.9rem !important;
     font-weight: 700;
-    text-align: center;
+    text-align: center; 
 
 }
 

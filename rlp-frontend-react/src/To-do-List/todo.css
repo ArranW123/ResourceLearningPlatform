@@ -5,7 +5,7 @@ h1 {
   width: 600px;
   margin: 60px auto;
 }
-form,
+.form-todo,
 .todo {
   border: 1px solid grey;
   padding: 10px 20px;
@@ -16,7 +16,7 @@ form {
   justify-content: space-between;
   margin-bottom: 20px;
 }
-form input {
+.form-todo input {
   padding: 4px 8px;
   flex-grow: 1;
   margin-right: 16px;
