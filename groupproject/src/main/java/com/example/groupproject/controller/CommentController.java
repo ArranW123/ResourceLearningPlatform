@@ -63,7 +63,9 @@ public class CommentController {
         return ResponseEntity.ok(HttpStatus.OK);
         }
 
+       
         @RequestMapping(value = "/getComment",method = RequestMethod.GET)
+		public
         List<Comment> getComment(@Valid Comment comment) {
             return repo.findAll();
         }
