@@ -30,7 +30,7 @@
     margin: 16px 70px 16px 70px;
 }
 
-.form button{
+.upload button{
     background-color:#1865F2;
     padding:12px 26px;
     color: white;
@@ -44,6 +44,10 @@
     width:100%;
     border-style: solid;
     border-color: black;
+}
+
+.button:hover{
+    background-color:dodgerblue;
 }
 
 .form{
