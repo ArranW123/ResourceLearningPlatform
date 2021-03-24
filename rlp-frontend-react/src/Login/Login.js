@@ -88,9 +88,8 @@ function Login() {
                 />
               </div>
             </div>
-          </div>
-          <div className="form-group mt-3">
-           <center><button
+            <div className="form-group mt-3">
+           <center><button style={{paddingLeft:"20px"}}
               type="submit"
               onClick={loginUser}
               className="button button-contactForm btn_4 boxed-btn btn btn-success"
@@ -98,6 +97,8 @@ function Login() {
               Login
             </button></center> 
           </div>
+          </div>
+         
          { error ? 
           <div className="error">
              <center><p className="bg-danger">{error}</p></center> 
