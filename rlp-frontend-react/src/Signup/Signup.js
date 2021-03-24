@@ -129,10 +129,9 @@ function SignUp() {
                   />
                 </div>
               </div>
-            </div>
-            <div className="form-group mt-3">
+              <div className="form-group mt-3">
               <center>
-                <button
+                <button style={{marginLeft:"30px"}}
                   type="submit"
                   onClick={registerUser}
                   className="button button-contactForm btn_4 boxed-btn btn btn-success"
@@ -141,6 +140,8 @@ function SignUp() {
                 </button>
               </center>
             </div>
+            </div>
+           
             {error ? (
               <div className="error">
                 <center>
