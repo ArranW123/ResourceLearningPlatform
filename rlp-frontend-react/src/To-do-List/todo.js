@@ -1,4 +1,5 @@
 import "./todo.css";
+import Header from '../Header/Header';
 import React from "react";
 
 
@@ -65,6 +66,8 @@ const ToDoList = () => {
     }
   
     return (
+      <div>
+        <Header />
       <div id="todo-list">
         <h1>Todo List</h1>
         <div className="form-todo">
@@ -105,6 +108,7 @@ const ToDoList = () => {
             </div>
           </div>
         ))}
+      </div>
       </div>
 
     );

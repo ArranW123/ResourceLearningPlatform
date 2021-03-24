@@ -47,6 +47,7 @@ button:focus {
 input[type="text"] {
   font-size: 20px;
   font-family: "Open Sans", sans-serif;
+}
 .todo input[type="checkbox"] {
   transform: scale(1.8) translateY(1px);
   margin: 0 20px 0 0;
