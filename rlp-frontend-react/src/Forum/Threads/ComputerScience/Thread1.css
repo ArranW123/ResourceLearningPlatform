@@ -89,8 +89,11 @@
     width: 1000px;
     border-radius: 5px;
     border: 2px solid #0059ff;
+    list-style-type: none;
+
     /* border: 2px solid rgb(139, 139, 139); */
 }
+
 .comments *{
     margin-bottom: 0px;
     margin-left: 10px;

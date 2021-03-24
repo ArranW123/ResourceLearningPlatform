@@ -97,7 +97,7 @@ useEffect(()=>{
                 <div >
                     <div>
                     {
-                    data?.map((author, index) => ( 
+                    data.slice(0).reverse()?.map((author, index) => ( 
                       <li key={index} class="comments">
                           <p className='commentsAuthor'>{author.author}</p>        
                           <p className='commentsDate'>{author.date}</p>                   
