@@ -106,7 +106,8 @@ const ToDoList = () => {
           </div>
         ))}
       </div>
+
     );
-  };
+  }
   
   export default ToDoList;
