@@ -1,5 +1,7 @@
 CS2001 Group 42 Project
 
+The Resource Learning Platform is a platform that allows Students and Educators to upload and download learning resources from all around the world. 
+
 cs2001-2020_21-group_42 created by GitHub Classroom (Brunel University)
 
 ArranW01 | Arran Weeresekere | (1911533)
