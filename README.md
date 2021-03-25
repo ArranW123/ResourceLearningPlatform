@@ -13,8 +13,8 @@ AAhmed202 | Azan Ahmed | 1813481
 - Download
 
 sekhar793 | Sekhar Varma Sagi | (2012686)
--Login 
--Register
+- Login
+- Register
 
 MoeFawaz | Mohammed Fawaz | (1818096)
 - About Us
