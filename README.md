@@ -3,6 +3,8 @@ CS2001 Group 42 Project
 cs2001-2020_21-group_42 created by GitHub Classroom (Brunel University)
 
 ArranW01 | Arran Weeresekere | (1911533)
+- Login
+- Register
 - Forum Page
 - Quiz
 
@@ -15,10 +17,11 @@ sekhar793 | Sekhar Varma Sagi | (2012686)
 -Register
 
 MoeFawaz | Mohammed Fawaz | (1818096)
--About Us
--Chatbot
+- About Us
+- Chatbot
+
 
 sagarchhetri99 | Sagar Chhetri | (1821111)
-- Login 
+- Login
 - Register
-- Todo List
+- Todo
